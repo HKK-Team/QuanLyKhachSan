@@ -40,7 +40,14 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.dtNgayDen = new System.Windows.Forms.DateTimePicker();
             this.dtNgayDi = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.thốngKêGiaoDịchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thôngTinKháchHaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thôngTinPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thanhToánToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgShowGD)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -91,7 +98,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.btnTimKiem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnTimKiem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.Location = new System.Drawing.Point(485, 203);
+            this.btnTimKiem.Location = new System.Drawing.Point(455, 202);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(107, 29);
             this.btnTimKiem.TabIndex = 4;
@@ -152,11 +159,62 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(401, 22);
+            this.label5.Location = new System.Drawing.Point(411, 40);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(222, 26);
             this.label5.TabIndex = 11;
             this.label5.Text = "Thống Kê Giao Dịch";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thốngKêGiaoDịchToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(978, 30);
+            this.menuStrip1.TabIndex = 12;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // thốngKêGiaoDịchToolStripMenuItem
+            // 
+            this.thốngKêGiaoDịchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thôngTinKháchHaToolStripMenuItem,
+            this.thôngTinPhòngToolStripMenuItem,
+            this.thanhToánToolStripMenuItem,
+            this.thoátToolStripMenuItem});
+            this.thốngKêGiaoDịchToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thốngKêGiaoDịchToolStripMenuItem.Name = "thốngKêGiaoDịchToolStripMenuItem";
+            this.thốngKêGiaoDịchToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
+            this.thốngKêGiaoDịchToolStripMenuItem.Text = "Thống Kê Giao Dịch";
+            // 
+            // thôngTinKháchHaToolStripMenuItem
+            // 
+            this.thôngTinKháchHaToolStripMenuItem.Name = "thôngTinKháchHaToolStripMenuItem";
+            this.thôngTinKháchHaToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
+            this.thôngTinKháchHaToolStripMenuItem.Text = " Khách Hàng";
+            this.thôngTinKháchHaToolStripMenuItem.Click += new System.EventHandler(this.thôngTinKháchHaToolStripMenuItem_Click);
+            // 
+            // thôngTinPhòngToolStripMenuItem
+            // 
+            this.thôngTinPhòngToolStripMenuItem.Name = "thôngTinPhòngToolStripMenuItem";
+            this.thôngTinPhòngToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.thôngTinPhòngToolStripMenuItem.Text = "Tình Trạng Phòng";
+            this.thôngTinPhòngToolStripMenuItem.Click += new System.EventHandler(this.thôngTinPhòngToolStripMenuItem_Click);
+            // 
+            // thanhToánToolStripMenuItem
+            // 
+            this.thanhToánToolStripMenuItem.Name = "thanhToánToolStripMenuItem";
+            this.thanhToánToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
+            this.thanhToánToolStripMenuItem.Text = "Thanh Toán";
+            this.thanhToánToolStripMenuItem.Click += new System.EventHandler(this.thanhToánToolStripMenuItem_Click);
+            // 
+            // thoátToolStripMenuItem
+            // 
+            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
+            this.thoátToolStripMenuItem.Text = "Thoát";
+            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // ThongKeGiaoDich
             // 
@@ -174,10 +232,14 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "ThongKeGiaoDich";
             this.Text = "ThongKeGiaoDich";
             this.Load += new System.EventHandler(this.ThongKeGiaoDich_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgShowGD)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,5 +258,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private System.Windows.Forms.DateTimePicker dtNgayDen;
         private System.Windows.Forms.DateTimePicker dtNgayDi;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem thốngKêGiaoDịchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thôngTinKháchHaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thôngTinPhòngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thanhToánToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
     }
 }

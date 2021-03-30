@@ -121,5 +121,22 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             adapter.SelectCommand = MySqlcommand;
             adapter.Fill(table);
         }
+
+        private void thốngKêGiaoDịchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThongKeGiaoDich tkgd = new ThongKeGiaoDich();
+            tkgd.Show();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult a = MessageBox.Show("Bạn có thực sự muốn thoát chương trình hay không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (a == DialogResult.Yes)
+            {
+                this.Close();
+                Application.Exit();
+            }
+        }
     }
 }

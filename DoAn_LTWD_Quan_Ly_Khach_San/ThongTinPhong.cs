@@ -79,17 +79,36 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             dgShowPhong.DataSource = table;
         }
 
-        private void dgShowPhong_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
         private void dgShowPhong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int ans;
             ans = dgShowPhong.CurrentRow.Index;
             cbMaPhong.Text = dgShowPhong.Rows[ans].Cells[0].Value.ToString();
             cbTinhTrang.Text = dgShowPhong.Rows[ans].Cells[3].Value.ToString();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddPhong addp = new AddPhong();
+            addp.Show();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult a = MessageBox.Show("Bạn có thực sự muốn thoát chương trình hay không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (a == DialogResult.Yes)
+            {
+                this.Close();
+                Application.Exit();
+            }
+        }
+
+        private void thốngKêGiaoDịchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThongKeGiaoDich tkgd = new ThongKeGiaoDich();
+            tkgd.Show();
         }
     }
 }

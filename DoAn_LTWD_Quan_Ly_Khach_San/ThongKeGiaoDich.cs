@@ -34,7 +34,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             adapter.Fill(dt);
             foreach (DataRow dr in dt.Rows)
             {
-                cbMaPhong.Items.Add(dr["makh"].ToString());
+                cbMaKH.Items.Add(dr["makh"].ToString());
             }
         }    
         private void loadPhong()
@@ -66,9 +66,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         {
             Connection = new MySqlConnection(MySQLConnectionString);
             Connection.Open();
-            ShowDaTa();
             loadMaKH();
             loadPhong();
+            ShowDaTa();
         }
 
         private void dgShowGD_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -89,6 +89,37 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             table.Clear();
             adapter.Fill(table);
             dgShowGD.DataSource = table;
+        }
+
+        private void thôngTinKháchHaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThongTinKhachHang formkhachhang = new ThongTinKhachHang();
+            formkhachhang.Show();
+        }
+
+        private void thôngTinPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThongTinPhong Phong = new ThongTinPhong();
+            Phong.Show();
+        }
+
+        private void thanhToánToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThanhToan thanhtoan = new ThanhToan();
+            thanhtoan.Show();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult a = MessageBox.Show("Bạn có thực sự muốn thoát chương trình hay không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (a == DialogResult.Yes)
+            {
+                this.Close();
+                Application.Exit();
+            }
         }
     }
 }
