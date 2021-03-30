@@ -70,7 +70,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            int ans;
             MySqlcommand = Connection.CreateCommand();
             MySqlcommand.CommandText = "select* from phong where maphong = '" + cbMaPhong.Text + "' or tinhtrang = '"+cbTinhTrang.Text+"'";
             adapter.SelectCommand = MySqlcommand;

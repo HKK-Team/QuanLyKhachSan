@@ -51,7 +51,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
                 }
 
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 MessageBox.Show("Lỗi kết nối!","Thông Báo!");
             }
