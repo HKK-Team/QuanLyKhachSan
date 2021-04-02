@@ -42,7 +42,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
                 {
                     MessageBox.Show("Đăng nhập thành công!","Thông báo!",MessageBoxButtons.OK);
                     this.Hide();
-                    ThongTinKhachHang TTKH = new ThongTinKhachHang();
+                    TrangChu TTKH = new TrangChu();
                     TTKH.Show();
                 }
                 else
@@ -57,7 +57,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             }
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
+
+        private void iconPictureBox5_Click(object sender, EventArgs e)
         {
             DialogResult a = MessageBox.Show("Bạn có thực sự muốn thoát chương trình hay không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (a == DialogResult.Yes)
@@ -65,6 +66,26 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
                 this.Close();
                 Application.Exit();
             }
+        }
+        private void txtTaiKhoan_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtTaiKhoan.Clear();
+            panel1.BackColor = Color.FromArgb(181, 255, 248);
+            iconPictureBox3.ForeColor = Color.FromArgb(181, 255, 248);
+        }
+
+        private void txtMatKhau_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtMatKhau.Clear();
+            panel3.BackColor = Color.FromArgb(181, 255, 248);
+            iconPictureBox4.ForeColor = Color.FromArgb(181, 255, 248);
+        }
+
+  
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            txtTaiKhoan.Clear();
+            txtMatKhau.Clear();
         }
     }
 }

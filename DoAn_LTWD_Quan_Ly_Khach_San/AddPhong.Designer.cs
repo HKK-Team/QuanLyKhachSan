@@ -50,17 +50,17 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(433, 9);
+            this.label1.Location = new System.Drawing.Point(266, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 26);
+            this.label1.Size = new System.Drawing.Size(125, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Thêm Phòng";
+            this.label1.Text = "Book room";
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(213, 58);
+            this.label2.Location = new System.Drawing.Point(65, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 19);
             this.label2.TabIndex = 1;
@@ -70,7 +70,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(212, 118);
+            this.label3.Location = new System.Drawing.Point(64, 118);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 19);
             this.label3.TabIndex = 2;
@@ -80,7 +80,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(213, 179);
+            this.label4.Location = new System.Drawing.Point(65, 179);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 19);
             this.label4.TabIndex = 3;
@@ -90,7 +90,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(212, 228);
+            this.label5.Location = new System.Drawing.Point(64, 228);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 19);
             this.label5.TabIndex = 4;
@@ -109,19 +109,18 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(39, 58);
+            this.groupBox1.Location = new System.Drawing.Point(21, 70);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(937, 358);
+            this.groupBox1.Size = new System.Drawing.Size(641, 358);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thêm Thông Tin Phòng";
             // 
             // btnQuayLai
             // 
-            this.btnQuayLai.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnQuayLai.Location = new System.Drawing.Point(526, 290);
+            this.btnQuayLai.Location = new System.Drawing.Point(378, 290);
             this.btnQuayLai.Name = "btnQuayLai";
-            this.btnQuayLai.Size = new System.Drawing.Size(110, 34);
+            this.btnQuayLai.Size = new System.Drawing.Size(138, 45);
             this.btnQuayLai.TabIndex = 9;
             this.btnQuayLai.Text = "Quay Lại";
             this.btnQuayLai.UseVisualStyleBackColor = true;
@@ -129,10 +128,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // btnAdd
             // 
-            this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdd.Location = new System.Drawing.Point(310, 290);
+            this.btnAdd.Location = new System.Drawing.Point(162, 290);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(110, 34);
+            this.btnAdd.Size = new System.Drawing.Size(138, 45);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add Phòng";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -140,34 +138,30 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // txtTinhTrang
             // 
-            this.txtTinhTrang.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTinhTrang.Location = new System.Drawing.Point(356, 225);
+            this.txtTinhTrang.Location = new System.Drawing.Point(208, 225);
             this.txtTinhTrang.Name = "txtTinhTrang";
-            this.txtTinhTrang.Size = new System.Drawing.Size(246, 27);
+            this.txtTinhTrang.Size = new System.Drawing.Size(306, 27);
             this.txtTinhTrang.TabIndex = 8;
             // 
             // txtDonGia
             // 
-            this.txtDonGia.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDonGia.Location = new System.Drawing.Point(356, 175);
+            this.txtDonGia.Location = new System.Drawing.Point(208, 175);
             this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(246, 27);
+            this.txtDonGia.Size = new System.Drawing.Size(306, 27);
             this.txtDonGia.TabIndex = 7;
             // 
             // txtSoGiuong
             // 
-            this.txtSoGiuong.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSoGiuong.Location = new System.Drawing.Point(356, 118);
+            this.txtSoGiuong.Location = new System.Drawing.Point(208, 118);
             this.txtSoGiuong.Name = "txtSoGiuong";
-            this.txtSoGiuong.Size = new System.Drawing.Size(246, 27);
+            this.txtSoGiuong.Size = new System.Drawing.Size(306, 27);
             this.txtSoGiuong.TabIndex = 6;
             // 
             // txtMaPhong
             // 
-            this.txtMaPhong.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMaPhong.Location = new System.Drawing.Point(356, 55);
+            this.txtMaPhong.Location = new System.Drawing.Point(208, 55);
             this.txtMaPhong.Name = "txtMaPhong";
-            this.txtMaPhong.Size = new System.Drawing.Size(246, 27);
+            this.txtMaPhong.Size = new System.Drawing.Size(306, 27);
             this.txtMaPhong.TabIndex = 5;
             // 
             // dgShowPhong
@@ -183,13 +177,16 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // AddPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 657);
-            this.Controls.Add(this.dgShowPhong);
+            this.ClientSize = new System.Drawing.Size(700, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddPhong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddPhong";
             this.Load += new System.EventHandler(this.AddPhong_Load);
             this.groupBox1.ResumeLayout(false);
