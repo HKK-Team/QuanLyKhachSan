@@ -78,24 +78,27 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.pn_right.Controls.Add(this.icon_trangchu);
             this.pn_right.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_right.Location = new System.Drawing.Point(0, 0);
+            this.pn_right.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pn_right.Name = "pn_right";
-            this.pn_right.Size = new System.Drawing.Size(260, 850);
+            this.pn_right.Size = new System.Drawing.Size(280, 787);
             this.pn_right.TabIndex = 2;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(0, 120);
+            this.panel7.Location = new System.Drawing.Point(0, 157);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(263, 1);
+            this.panel7.Size = new System.Drawing.Size(328, 1);
             this.panel7.TabIndex = 0;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(0, 395);
+            this.panel5.Location = new System.Drawing.Point(0, 519);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(5, 60);
+            this.panel5.Size = new System.Drawing.Size(7, 79);
             this.panel5.TabIndex = 19;
             // 
             // iconButton3
@@ -109,9 +112,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton3.IconColor = System.Drawing.Color.WhiteSmoke;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 395);
+            this.iconButton3.Location = new System.Drawing.Point(0, 519);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(260, 60);
+            this.iconButton3.Size = new System.Drawing.Size(325, 79);
             this.iconButton3.TabIndex = 18;
             this.iconButton3.Text = "        Admin account";
             this.iconButton3.UseVisualStyleBackColor = true;
@@ -119,25 +123,28 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(0, 328);
+            this.panel4.Location = new System.Drawing.Point(0, 431);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 60);
+            this.panel4.Size = new System.Drawing.Size(7, 79);
             this.panel4.TabIndex = 17;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(0, 262);
+            this.panel3.Location = new System.Drawing.Point(0, 344);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 60);
+            this.panel3.Size = new System.Drawing.Size(7, 79);
             this.panel3.TabIndex = 16;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(0, 196);
+            this.panel2.Location = new System.Drawing.Point(0, 257);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 60);
+            this.panel2.Size = new System.Drawing.Size(7, 79);
             this.panel2.TabIndex = 15;
             // 
             // iconButton6
@@ -151,9 +158,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton6.IconColor = System.Drawing.Color.WhiteSmoke;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(0, 196);
+            this.iconButton6.Location = new System.Drawing.Point(0, 257);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(260, 60);
+            this.iconButton6.Size = new System.Drawing.Size(325, 79);
             this.iconButton6.TabIndex = 14;
             this.iconButton6.Text = "    Room status";
             this.iconButton6.UseVisualStyleBackColor = true;
@@ -169,9 +177,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton5.IconColor = System.Drawing.Color.WhiteSmoke;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(3, 328);
+            this.iconButton5.Location = new System.Drawing.Point(3, 431);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(260, 60);
+            this.iconButton5.Size = new System.Drawing.Size(325, 79);
             this.iconButton5.TabIndex = 13;
             this.iconButton5.Text = "           Payment statistics";
             this.iconButton5.UseVisualStyleBackColor = true;
@@ -187,9 +196,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton2.IconColor = System.Drawing.Color.WhiteSmoke;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 262);
+            this.iconButton2.Location = new System.Drawing.Point(0, 344);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(260, 60);
+            this.iconButton2.Size = new System.Drawing.Size(325, 79);
             this.iconButton2.TabIndex = 10;
             this.iconButton2.Text = "Pay";
             this.iconButton2.UseVisualStyleBackColor = true;
@@ -197,9 +207,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Location = new System.Drawing.Point(0, 130);
+            this.panel1.Location = new System.Drawing.Point(0, 171);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 60);
+            this.panel1.Size = new System.Drawing.Size(7, 79);
             this.panel1.TabIndex = 9;
             // 
             // iconButton1
@@ -213,9 +224,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton1.IconColor = System.Drawing.Color.WhiteSmoke;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(3, 130);
+            this.iconButton1.Location = new System.Drawing.Point(3, 171);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(260, 60);
+            this.iconButton1.Size = new System.Drawing.Size(325, 79);
             this.iconButton1.TabIndex = 8;
             this.iconButton1.Text = "Book room";
             this.iconButton1.UseVisualStyleBackColor = true;
@@ -234,9 +246,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.icon_trangchu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icon_trangchu.IconSize = 65;
             this.icon_trangchu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.icon_trangchu.Location = new System.Drawing.Point(0, 25);
+            this.icon_trangchu.Location = new System.Drawing.Point(0, 33);
+            this.icon_trangchu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.icon_trangchu.Name = "icon_trangchu";
-            this.icon_trangchu.Size = new System.Drawing.Size(260, 96);
+            this.icon_trangchu.Size = new System.Drawing.Size(325, 126);
             this.icon_trangchu.TabIndex = 0;
             this.icon_trangchu.Text = "     HKK TEAM";
             this.icon_trangchu.UseVisualStyleBackColor = false;
@@ -250,9 +263,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.pn_top.Controls.Add(this.btn_restore);
             this.pn_top.Controls.Add(this.btn_close);
             this.pn_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_top.Location = new System.Drawing.Point(260, 0);
+            this.pn_top.Location = new System.Drawing.Point(280, 0);
+            this.pn_top.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pn_top.Name = "pn_top";
-            this.pn_top.Size = new System.Drawing.Size(1340, 39);
+            this.pn_top.Size = new System.Drawing.Size(1338, 51);
             this.pn_top.TabIndex = 3;
             this.pn_top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_top_MouseDown);
             // 
@@ -264,10 +278,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Bars;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 35;
+            this.iconPictureBox1.IconSize = 43;
             this.iconPictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(35, 35);
+            this.iconPictureBox1.Size = new System.Drawing.Size(43, 46);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
@@ -282,10 +297,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btn_maxizine.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
             this.btn_maxizine.IconColor = System.Drawing.SystemColors.ControlText;
             this.btn_maxizine.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_maxizine.IconSize = 25;
-            this.btn_maxizine.Location = new System.Drawing.Point(1277, 7);
+            this.btn_maxizine.Location = new System.Drawing.Point(1260, 9);
+            this.btn_maxizine.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_maxizine.Name = "btn_maxizine";
-            this.btn_maxizine.Size = new System.Drawing.Size(25, 25);
+            this.btn_maxizine.Size = new System.Drawing.Size(32, 33);
             this.btn_maxizine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_maxizine.TabIndex = 1;
             this.btn_maxizine.TabStop = false;
@@ -300,10 +315,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btn_mixinize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
             this.btn_mixinize.IconColor = System.Drawing.SystemColors.ControlText;
             this.btn_mixinize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_mixinize.IconSize = 25;
-            this.btn_mixinize.Location = new System.Drawing.Point(1246, 3);
+            this.btn_mixinize.Location = new System.Drawing.Point(1221, 4);
+            this.btn_mixinize.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_mixinize.Name = "btn_mixinize";
-            this.btn_mixinize.Size = new System.Drawing.Size(25, 25);
+            this.btn_mixinize.Size = new System.Drawing.Size(32, 33);
             this.btn_mixinize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_mixinize.TabIndex = 1;
             this.btn_mixinize.TabStop = false;
@@ -318,10 +333,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btn_restore.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
             this.btn_restore.IconColor = System.Drawing.SystemColors.ControlText;
             this.btn_restore.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_restore.IconSize = 25;
-            this.btn_restore.Location = new System.Drawing.Point(1277, 7);
+            this.btn_restore.Location = new System.Drawing.Point(1260, 9);
+            this.btn_restore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_restore.Name = "btn_restore";
-            this.btn_restore.Size = new System.Drawing.Size(25, 25);
+            this.btn_restore.Size = new System.Drawing.Size(32, 33);
             this.btn_restore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_restore.TabIndex = 1;
             this.btn_restore.TabStop = false;
@@ -336,10 +351,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btn_close.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
             this.btn_close.IconColor = System.Drawing.Color.Black;
             this.btn_close.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_close.IconSize = 25;
-            this.btn_close.Location = new System.Drawing.Point(1308, 7);
+            this.btn_close.Location = new System.Drawing.Point(1298, 9);
+            this.btn_close.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(25, 25);
+            this.btn_close.Size = new System.Drawing.Size(32, 33);
             this.btn_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_close.TabIndex = 1;
             this.btn_close.TabStop = false;
@@ -349,9 +364,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.pn_center.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pn_center.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_center.Location = new System.Drawing.Point(260, 39);
+            this.pn_center.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pn_center.Location = new System.Drawing.Point(280, 51);
+            this.pn_center.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pn_center.Name = "pn_center";
-            this.pn_center.Size = new System.Drawing.Size(1340, 811);
+            this.pn_center.Size = new System.Drawing.Size(1338, 736);
             this.pn_center.TabIndex = 4;
             this.pn_center.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_center_Paint);
             // 
@@ -365,13 +382,15 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // TrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 850);
+            this.ClientSize = new System.Drawing.Size(1618, 787);
             this.Controls.Add(this.pn_center);
             this.Controls.Add(this.pn_top);
             this.Controls.Add(this.pn_right);
+            this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TrangChu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrangChu";

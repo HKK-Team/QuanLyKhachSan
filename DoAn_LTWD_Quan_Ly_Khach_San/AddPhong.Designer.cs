@@ -54,9 +54,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(421, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 26);
+            this.label1.Size = new System.Drawing.Size(152, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Book room";
+            this.label1.Text = "Update Room";
             // 
             // label2
             // 

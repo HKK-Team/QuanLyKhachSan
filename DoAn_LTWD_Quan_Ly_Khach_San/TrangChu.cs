@@ -26,7 +26,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void iconPictureBox1_Click(object sender, EventArgs e)
         {
 
-            if (pn_right.Width == 260)
+            if (pn_right.Width == 280)
             {
                 timer1.Start();
             }
@@ -106,10 +106,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void timer2_Tick(object sender, EventArgs e)
         {
             pn_right.Width += 20;
-            if(pn_right.Width >= 260)
+            if(pn_right.Width >= 280)
             {
                 timer2.Stop();
-               pn_right.Width = 260;
+               pn_right.Width = 280;
             }
         }
     }
