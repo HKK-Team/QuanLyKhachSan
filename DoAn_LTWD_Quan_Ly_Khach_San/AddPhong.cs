@@ -16,9 +16,20 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         string MySQLConnectionString = @"server=localhost;user id=root;password = 260601;persistsecurityinfo=True;database=ql_khach_san";
         MySqlConnection Connection;
         MySqlCommand MySqlcommand;
+        MySqlDataAdapter adapter = new MySqlDataAdapter();
+        DataTable table = new DataTable();
         public AddPhong()
         {
             InitializeComponent();
+        }
+        void showdata()
+        {
+            MySqlcommand = Connection.CreateCommand();
+            MySqlcommand.CommandText = "select* from Phong";
+            adapter.SelectCommand = MySqlcommand;
+            table.Clear();
+            adapter.Fill(table);
+            dgShowPhong.DataSource = table;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,6 +51,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         {
             Connection = new MySqlConnection(MySQLConnectionString);
             Connection.Open();
+            showdata();
         }
     }
 }

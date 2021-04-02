@@ -138,5 +138,15 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
                 Application.Exit();
             }
         }
+
+        private void thoátToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            DialogResult a = MessageBox.Show("Bạn có thực sự muốn thoát chương trình hay không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (a == DialogResult.Yes)
+            {
+                this.Close();
+                Application.Exit();
+            }
+        }
     }
 }

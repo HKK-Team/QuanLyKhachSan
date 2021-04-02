@@ -41,16 +41,16 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.txtSoGiuong = new System.Windows.Forms.TextBox();
             this.txtMaPhong = new System.Windows.Forms.TextBox();
+            this.dgShowPhong = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgShowPhong)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(405, 74);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(266, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 26);
             this.label1.TabIndex = 0;
@@ -58,9 +58,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(81, 76);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(65, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 19);
             this.label2.TabIndex = 1;
@@ -68,9 +68,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(80, 155);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(64, 118);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 19);
             this.label3.TabIndex = 2;
@@ -78,9 +78,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(81, 235);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(65, 179);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 19);
             this.label4.TabIndex = 3;
@@ -88,9 +88,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(80, 299);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(64, 228);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 19);
             this.label5.TabIndex = 4;
@@ -98,7 +98,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.btnQuayLai);
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.txtTinhTrang);
@@ -110,19 +109,16 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(99, 140);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(21, 70);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(801, 470);
+            this.groupBox1.Size = new System.Drawing.Size(641, 358);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thêm Thông Tin Phòng";
             // 
             // btnQuayLai
             // 
-            this.btnQuayLai.Location = new System.Drawing.Point(472, 381);
-            this.btnQuayLai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQuayLai.Location = new System.Drawing.Point(378, 290);
             this.btnQuayLai.Name = "btnQuayLai";
             this.btnQuayLai.Size = new System.Drawing.Size(138, 45);
             this.btnQuayLai.TabIndex = 9;
@@ -132,8 +128,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(202, 381);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Location = new System.Drawing.Point(162, 290);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(138, 45);
             this.btnAdd.TabIndex = 6;
@@ -143,41 +138,48 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // txtTinhTrang
             // 
-            this.txtTinhTrang.Location = new System.Drawing.Point(260, 295);
-            this.txtTinhTrang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTinhTrang.Location = new System.Drawing.Point(208, 225);
             this.txtTinhTrang.Name = "txtTinhTrang";
             this.txtTinhTrang.Size = new System.Drawing.Size(306, 27);
             this.txtTinhTrang.TabIndex = 8;
             // 
             // txtDonGia
             // 
-            this.txtDonGia.Location = new System.Drawing.Point(260, 230);
-            this.txtDonGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDonGia.Location = new System.Drawing.Point(208, 175);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(306, 27);
             this.txtDonGia.TabIndex = 7;
             // 
             // txtSoGiuong
             // 
-            this.txtSoGiuong.Location = new System.Drawing.Point(260, 155);
-            this.txtSoGiuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoGiuong.Location = new System.Drawing.Point(208, 118);
             this.txtSoGiuong.Name = "txtSoGiuong";
             this.txtSoGiuong.Size = new System.Drawing.Size(306, 27);
             this.txtSoGiuong.TabIndex = 6;
             // 
             // txtMaPhong
             // 
-            this.txtMaPhong.Location = new System.Drawing.Point(260, 72);
-            this.txtMaPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaPhong.Location = new System.Drawing.Point(208, 55);
             this.txtMaPhong.Name = "txtMaPhong";
             this.txtMaPhong.Size = new System.Drawing.Size(306, 27);
             this.txtMaPhong.TabIndex = 5;
+            // 
+            // dgShowPhong
+            // 
+            this.dgShowPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgShowPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgShowPhong.Location = new System.Drawing.Point(39, 431);
+            this.dgShowPhong.Name = "dgShowPhong";
+            this.dgShowPhong.RowHeadersWidth = 51;
+            this.dgShowPhong.RowTemplate.Height = 24;
+            this.dgShowPhong.Size = new System.Drawing.Size(950, 167);
+            this.dgShowPhong.TabIndex = 6;
             // 
             // AddPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1021, 689);
+            this.ClientSize = new System.Drawing.Size(700, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -189,6 +191,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.Load += new System.EventHandler(this.AddPhong_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgShowPhong)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,5 +211,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private System.Windows.Forms.TextBox txtMaPhong;
         private System.Windows.Forms.Button btnQuayLai;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.DataGridView dgShowPhong;
     }
 }
