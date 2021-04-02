@@ -25,11 +25,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         void showdata()
         {
             MySqlcommand = Connection.CreateCommand();
-            MySqlcommand.CommandText = "select* from Phong";
+            MySqlcommand.CommandText = "select * from Phong";
             adapter.SelectCommand = MySqlcommand;
             table.Clear();
             adapter.Fill(table);
-            dgShowPhong.DataSource = table;
+            dgShowTTPhong.DataSource = table;
         }
 
         private void button1_Click(object sender, EventArgs e)
