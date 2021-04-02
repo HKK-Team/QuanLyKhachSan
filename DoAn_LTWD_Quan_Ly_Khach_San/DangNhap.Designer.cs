@@ -157,6 +157,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DangNhap";
+            this.Text = "Ứng Dụng Quản Lý Khách Sạn";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

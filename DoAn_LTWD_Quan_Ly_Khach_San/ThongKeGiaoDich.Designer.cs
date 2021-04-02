@@ -191,7 +191,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // thôngTinKháchHaToolStripMenuItem
             // 
             this.thôngTinKháchHaToolStripMenuItem.Name = "thôngTinKháchHaToolStripMenuItem";
-            this.thôngTinKháchHaToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
+            this.thôngTinKháchHaToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
             this.thôngTinKháchHaToolStripMenuItem.Text = " Khách Hàng";
             this.thôngTinKháchHaToolStripMenuItem.Click += new System.EventHandler(this.thôngTinKháchHaToolStripMenuItem_Click);
             // 
@@ -205,14 +205,14 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // thanhToánToolStripMenuItem
             // 
             this.thanhToánToolStripMenuItem.Name = "thanhToánToolStripMenuItem";
-            this.thanhToánToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
+            this.thanhToánToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
             this.thanhToánToolStripMenuItem.Text = "Thanh Toán";
             this.thanhToánToolStripMenuItem.Click += new System.EventHandler(this.thanhToánToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
@@ -235,7 +235,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ThongKeGiaoDich";
-            this.Text = "ThongKeGiaoDich";
+            this.Text = "Ứng Dụng Quản Lý Khách Sạn";
             this.Load += new System.EventHandler(this.ThongKeGiaoDich_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgShowGD)).EndInit();
             this.menuStrip1.ResumeLayout(false);
