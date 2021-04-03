@@ -35,6 +35,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             showdata();
             Showlb_Phong();
             ShowSoPhongDD();
+            ShowBill();
 
         }
         public void Showlb_Phong()
@@ -59,6 +60,19 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             while (Read_Data.Read())
             {
                 lbl_RoomStatus.Text = "Có " + Read_Data[0].ToString() + " phòng đã đặt";
+            }
+            Read_Data.Close();
+            Connection.Close();
+        }
+        public void ShowBill()
+        {
+            Connection.Open();
+            Mysql = "select count(MAGD) as TongBill from thongkegiaodich";
+            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
+            Read_Data = mySqlCommand.ExecuteReader();
+            while (Read_Data.Read())
+            {
+                lbl_ThanhToan.Text = "Có " + Read_Data[0].ToString() + " bill đã thanh toán";
             }
             Read_Data.Close();
             Connection.Close();
