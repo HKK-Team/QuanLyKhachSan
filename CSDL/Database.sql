@@ -9,17 +9,6 @@ create table KHACHHANG
 	FOREIGN KEY (MAPHONG) REFERENCES PHONG(MAPHONG),
     TinhTrangTT nvarchar(30)
 );
-create table THONGKEGIAODICH
-(
-	MAGD INT AUTO_INCREMENT primary KEY,
-    MAKH CHAR(4),
-    foreign key (MAKH) references KHACHHANG(MAKH),
-    MAPHONG CHAR(4),
-    foreign key (MAPHONG) references PHONG(MAPHONG),
-    NGAYDEN datetime,
-    NGAYDI date,
-    SOTIENDATHANHTOAN int
-);
 CREATE TABLE PHONG
 (
 	MAPHONG CHAR(4) PRIMARY KEY,
@@ -72,4 +61,5 @@ from phong,khachhang
 where phong.MAPHONG = khachhang.MAPHONG;
 alter table khachhang add column TinhTrangThanhToan nvarchar(100);
 
-select* from Phong where Tinhtrang = N'Còn Trống'
+select count(MAPHONG)  from Phong where Tinhtrang = N'Còn Trống'; 
+select count(MaKh) from khachhang 

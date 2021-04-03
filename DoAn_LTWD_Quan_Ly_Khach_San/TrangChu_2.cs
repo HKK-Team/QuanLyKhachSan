@@ -18,6 +18,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         MySqlCommand MySqlcommand;
         MySqlDataAdapter adapter = new MySqlDataAdapter();
         DataTable table = new DataTable();
+        MySqlDataReader Read_Data;
+        string Mysql;
+
         public TrangChu_2()
         {
             InitializeComponent();          
@@ -32,6 +35,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             Connection = new MySqlConnection(MySQLConnectionString);
             Connection.Open();
             showdata();
+            showKhachHang();
+            
         }
         void showdata()
         {
@@ -42,10 +47,21 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             adapter.Fill(table);
             dgTC.DataSource = table;
         }
-
-        private void lbl_Phong_Click(object sender, EventArgs e)
+        void showKhachHang()
         {
-
+            Mysql = "select count(MaKh) from khachhang ";
+            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
+            Read_Data = mySqlCommand.ExecuteReader();
+            while (Read_Data.Read())
+            {
+                lbl_Khachhang.Text =  Read_Data[0].ToString() + " khách hàng";
+            }
+            Read_Data.Close();
         }
+        
+
+
+
+
     }
 }
