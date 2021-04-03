@@ -64,10 +64,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             showdata();
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void btn_xoa_Click(object sender, EventArgs e)
         {
             MySqlcommand = Connection.CreateCommand();
-            MySqlcommand.CommandText = "delete from phong where maphong = '"+txtMaPhong.Text+"'";
+            MySqlcommand.CommandText = "delete from phong where maphong = '" + txtMaPhong.Text + "'";
             MySqlcommand.ExecuteNonQuery();
             MessageBox.Show("Bạn đã xóa thành công 1 phòng vào cơ sở dữ liệu.", "Thông Báo!", MessageBoxButtons.OK);
             table.Clear();

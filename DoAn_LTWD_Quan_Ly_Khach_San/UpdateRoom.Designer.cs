@@ -29,11 +29,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,6 +55,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.dgShowPhong = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_xoa = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgShowPhongh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -110,6 +111,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.groupBox1.Controls.Add(this.panel4);
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.btnQuayLai);
+            this.groupBox1.Controls.Add(this.btn_xoa);
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.txtTinhTrang);
             this.groupBox1.Controls.Add(this.txtDonGia);
@@ -169,7 +171,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btnQuayLai.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnQuayLai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnQuayLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuayLai.Location = new System.Drawing.Point(347, 341);
+            this.btnQuayLai.Location = new System.Drawing.Point(272, 396);
             this.btnQuayLai.Name = "btnQuayLai";
             this.btnQuayLai.Size = new System.Drawing.Size(138, 45);
             this.btnQuayLai.TabIndex = 9;
@@ -183,7 +185,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Location = new System.Drawing.Point(177, 341);
+            this.btnAdd.Location = new System.Drawing.Point(173, 327);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(138, 45);
             this.btnAdd.TabIndex = 6;
@@ -203,7 +205,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txtTinhTrang.Name = "txtTinhTrang";
             this.txtTinhTrang.Size = new System.Drawing.Size(306, 28);
             this.txtTinhTrang.TabIndex = 8;
-            this.txtTinhTrang.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtTinhTrang_MouseClick);
             // 
             // txtDonGia
             // 
@@ -217,7 +218,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(306, 28);
             this.txtDonGia.TabIndex = 7;
-            this.txtDonGia.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtDonGia_MouseClick);
             // 
             // txtSoGiuong
             // 
@@ -231,7 +231,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txtSoGiuong.Name = "txtSoGiuong";
             this.txtSoGiuong.Size = new System.Drawing.Size(306, 28);
             this.txtSoGiuong.TabIndex = 6;
-            this.txtSoGiuong.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSoGiuong_MouseClick);
             // 
             // txtMaPhong
             // 
@@ -245,7 +244,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txtMaPhong.Name = "txtMaPhong";
             this.txtMaPhong.Size = new System.Drawing.Size(306, 28);
             this.txtMaPhong.TabIndex = 5;
-            this.txtMaPhong.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtMaPhong_MouseClick);
             // 
             // dgShowPhongh
             // 
@@ -285,56 +283,54 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconPictureBox1.TabIndex = 7;
             this.iconPictureBox1.TabStop = false;
-            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
             // dgShowPhong
             // 
             this.dgShowPhong.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.dgShowPhong.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.dgShowPhong.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgShowPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgShowPhong.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
             this.dgShowPhong.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgShowPhong.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(55)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgShowPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgShowPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgShowPhong.ColumnHeadersHeight = 40;
             this.dgShowPhong.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgShowPhong.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgShowPhong.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgShowPhong.EnableHeadersVisualStyles = false;
             this.dgShowPhong.GridColor = System.Drawing.Color.Black;
             this.dgShowPhong.Location = new System.Drawing.Point(3, 122);
             this.dgShowPhong.Name = "dgShowPhong";
             this.dgShowPhong.ReadOnly = true;
             this.dgShowPhong.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(55)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgShowPhong.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgShowPhong.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgShowPhong.RowHeadersWidth = 51;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.dgShowPhong.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.dgShowPhong.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dgShowPhong.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
             this.dgShowPhong.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.dgShowPhong.RowTemplate.Height = 35;
             this.dgShowPhong.Size = new System.Drawing.Size(724, 457);
             this.dgShowPhong.TabIndex = 6;
-            this.dgShowPhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgShowPhong_CellClick);
             // 
             // panel1
             // 
@@ -357,6 +353,20 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1338, 736);
             this.panel2.TabIndex = 8;
+            // 
+            // btn_xoa
+            // 
+            this.btn_xoa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_xoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_xoa.Location = new System.Drawing.Point(347, 327);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(138, 45);
+            this.btn_xoa.TabIndex = 6;
+            this.btn_xoa.Text = "Xóa phòng";
+            this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // UpdateRoom
             // 
@@ -406,5 +416,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private System.Windows.Forms.DataGridView dgShowPhong;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_xoa;
     }
 }
