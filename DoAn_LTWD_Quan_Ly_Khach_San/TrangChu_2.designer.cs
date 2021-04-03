@@ -30,8 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu_2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbl_ThanhToan = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
@@ -96,14 +99,13 @@
             // lbl_ThanhToan
             // 
             this.lbl_ThanhToan.AutoSize = true;
-            this.lbl_ThanhToan.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ThanhToan.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ThanhToan.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl_ThanhToan.Location = new System.Drawing.Point(19, 185);
+            this.lbl_ThanhToan.Location = new System.Drawing.Point(-5, 185);
             this.lbl_ThanhToan.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_ThanhToan.Name = "lbl_ThanhToan";
-            this.lbl_ThanhToan.Size = new System.Drawing.Size(60, 22);
+            this.lbl_ThanhToan.Size = new System.Drawing.Size(0, 20);
             this.lbl_ThanhToan.TabIndex = 16;
-            this.lbl_ThanhToan.Text = "Số bill ";
             // 
             // panel3
             // 
@@ -117,31 +119,15 @@
             this.panel3.Size = new System.Drawing.Size(160, 220);
             this.panel3.TabIndex = 31;
             // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.iconPictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.FileContract;
-            this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 117;
-            this.iconPictureBox3.Location = new System.Drawing.Point(18, 63);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(121, 117);
-            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.iconPictureBox3.TabIndex = 17;
-            this.iconPictureBox3.TabStop = false;
-            // 
             // lbl_Doanhthu
             // 
             this.lbl_Doanhthu.AutoSize = true;
-            this.lbl_Doanhthu.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Doanhthu.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Doanhthu.ForeColor = System.Drawing.Color.Red;
             this.lbl_Doanhthu.Location = new System.Drawing.Point(5, 186);
             this.lbl_Doanhthu.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_Doanhthu.Name = "lbl_Doanhthu";
-            this.lbl_Doanhthu.Size = new System.Drawing.Size(156, 22);
+            this.lbl_Doanhthu.Size = new System.Drawing.Size(122, 20);
             this.lbl_Doanhthu.TabIndex = 16;
             this.lbl_Doanhthu.Text = "Tổng Doanh thu";
             // 
@@ -185,12 +171,12 @@
             // lbl_NhanVien
             // 
             this.lbl_NhanVien.AutoSize = true;
-            this.lbl_NhanVien.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NhanVien.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_NhanVien.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lbl_NhanVien.Location = new System.Drawing.Point(42, 186);
             this.lbl_NhanVien.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_NhanVien.Name = "lbl_NhanVien";
-            this.lbl_NhanVien.Size = new System.Drawing.Size(76, 22);
+            this.lbl_NhanVien.Size = new System.Drawing.Size(59, 20);
             this.lbl_NhanVien.TabIndex = 16;
             this.lbl_NhanVien.Text = "Tên NV";
             // 
@@ -269,24 +255,24 @@
             this.TablaProductos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.TablaProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.TablaProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.TablaProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TablaProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
             this.TablaProductos.ColumnHeadersHeight = 30;
             this.TablaProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.TablaProductos.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TablaProductos.DefaultCellStyle = dataGridViewCellStyle42;
             this.TablaProductos.EnableHeadersVisualStyles = false;
             this.TablaProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TablaProductos.Location = new System.Drawing.Point(21, 375);
@@ -347,34 +333,27 @@
             this.panel11.Size = new System.Drawing.Size(160, 220);
             this.panel11.TabIndex = 35;
             // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.iconPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Stream;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 117;
-            this.iconPictureBox1.Location = new System.Drawing.Point(22, 64);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(121, 117);
-            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.iconPictureBox1.TabIndex = 17;
-            this.iconPictureBox1.TabStop = false;
-            // 
             // lbl_RoomStatus
             // 
             this.lbl_RoomStatus.AutoSize = true;
-            this.lbl_RoomStatus.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RoomStatus.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_RoomStatus.ForeColor = System.Drawing.Color.Crimson;
             this.lbl_RoomStatus.Location = new System.Drawing.Point(5, 185);
             this.lbl_RoomStatus.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_RoomStatus.Name = "lbl_RoomStatus";
-            this.lbl_RoomStatus.Size = new System.Drawing.Size(160, 22);
+            this.lbl_RoomStatus.Size = new System.Drawing.Size(0, 20);
             this.lbl_RoomStatus.TabIndex = 16;
-            this.lbl_RoomStatus.Text = "Số phòng đã đặt";
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel12.Controls.Add(this.label8);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Margin = new System.Windows.Forms.Padding(5);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(158, 49);
+            this.panel12.TabIndex = 0;
             // 
             // panel12
             // 
@@ -415,12 +394,12 @@
             // lbl_Khachhang
             // 
             this.lbl_Khachhang.AutoSize = true;
-            this.lbl_Khachhang.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Khachhang.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Khachhang.ForeColor = System.Drawing.Color.SeaGreen;
             this.lbl_Khachhang.Location = new System.Drawing.Point(23, 186);
             this.lbl_Khachhang.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbl_Khachhang.Name = "lbl_Khachhang";
-            this.lbl_Khachhang.Size = new System.Drawing.Size(92, 22);
+            this.lbl_Khachhang.Size = new System.Drawing.Size(75, 20);
             this.lbl_Khachhang.TabIndex = 1;
             this.lbl_Khachhang.Text = "Số khách";
             // 
@@ -497,33 +476,18 @@
             this.panel7.Size = new System.Drawing.Size(160, 220);
             this.panel7.TabIndex = 33;
             // 
-            // iconPictureBox4
-            // 
-            this.iconPictureBox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.iconPictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.Hotel;
-            this.iconPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 117;
-            this.iconPictureBox4.Location = new System.Drawing.Point(20, 63);
-            this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(121, 117);
-            this.iconPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.iconPictureBox4.TabIndex = 17;
-            this.iconPictureBox4.TabStop = false;
-            // 
             // lbl_Phong
             // 
             this.lbl_Phong.AutoSize = true;
-            this.lbl_Phong.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Phong.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Phong.ForeColor = System.Drawing.Color.SeaGreen;
             this.lbl_Phong.Location = new System.Drawing.Point(12, 186);
             this.lbl_Phong.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lbl_Phong.Name = "lbl_Phong";
-            this.lbl_Phong.Size = new System.Drawing.Size(147, 22);
+            this.lbl_Phong.Text = "Số phòng trống";
+            this.lbl_Phong.Click += new System.EventHandler(this.lbl_Phong_Click);
             this.lbl_Phong.TabIndex = 16;
             this.lbl_Phong.Text = "Số phòng trống";
+            this.lbl_Phong.Click += new System.EventHandler(this.lbl_Phong_Click);
             // 
             // panel8
             // 
@@ -557,7 +521,7 @@
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Margin = new System.Windows.Forms.Padding(5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(158, 49);
+            this.panel6.Size = new System.Drawing.Size(157, 49);
             this.panel6.TabIndex = 0;
             // 
             // panel5
@@ -569,7 +533,7 @@
             this.panel5.Location = new System.Drawing.Point(1150, 46);
             this.panel5.Margin = new System.Windows.Forms.Padding(5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(160, 220);
+            this.panel5.Size = new System.Drawing.Size(159, 220);
             this.panel5.TabIndex = 32;
             // 
             // iconPictureBox2

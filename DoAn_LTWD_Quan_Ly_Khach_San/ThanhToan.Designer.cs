@@ -149,7 +149,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thanh Toán";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // lbMaKH
             // 
@@ -298,7 +297,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm Kiếm Nhanh";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label8
             // 

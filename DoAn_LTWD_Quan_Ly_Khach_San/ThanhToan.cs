@@ -171,17 +171,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         {
             this.Close();
         }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void dgShowKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int ans;
