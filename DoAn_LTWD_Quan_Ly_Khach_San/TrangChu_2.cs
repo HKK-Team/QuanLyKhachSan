@@ -27,11 +27,41 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             lblhora.Text = DateTime.Now.ToString("hh:mm:ss ");
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
+        string Mysql;
+        MySqlDataReader Read_Data; // khởi tạo 1 biến để đọc giá trị
         private void TrangChu_2_Load(object sender, EventArgs e)
         {
             Connection = new MySqlConnection(MySQLConnectionString);
-            Connection.Open();
             showdata();
+            Showlb_Phong();
+            ShowSoPhongDD();
+
+        }
+        public void Showlb_Phong()
+        {
+            Connection.Open();
+            Mysql = "select count(MAPHONG) as soluongphong from phong where TINHTRANG = 'Còn Trống'";
+            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
+            Read_Data = mySqlCommand.ExecuteReader();
+            while (Read_Data.Read())
+            {
+                lbl_Phong.Text = "   Còn " + Read_Data[0].ToString() + " phòng";
+            }
+            Read_Data.Close();
+            Connection.Close();
+        }
+        public void ShowSoPhongDD()
+        {
+            Connection.Open();
+            Mysql = "select count(MAPHONG) as soluongphong from phong where TINHTRANG = 'Đã Có Khách'";
+            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
+            Read_Data = mySqlCommand.ExecuteReader();
+            while (Read_Data.Read())
+            {
+                lbl_RoomStatus.Text = "Có " + Read_Data[0].ToString() + " phòng đã đặt";
+            }
+            Read_Data.Close();
+            Connection.Close();
         }
         void showdata()
         {

@@ -73,5 +73,15 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             table.Clear();
             showdata();
         }
+
+        private void dgShowPhong_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int ans;
+            ans = dgShowPhong.CurrentRow.Index;
+            txtMaPhong.Text = dgShowPhong.Rows[ans].Cells[0].Value.ToString();
+            txtDonGia.Text = dgShowPhong.Rows[ans].Cells[2].Value.ToString();
+            txtSoGiuong.Text = dgShowPhong.Rows[ans].Cells[1].Value.ToString();
+            txtTinhTrang.Text = dgShowPhong.Rows[ans].Cells[3].Value.ToString();
+        }
     }
 }
