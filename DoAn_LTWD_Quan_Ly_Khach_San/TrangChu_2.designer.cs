@@ -30,14 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu_2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbl_ThanhToan = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.lbl_Doanhthu = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
@@ -54,7 +51,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.lbl_RoomStatus = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -75,14 +72,14 @@
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.dgTC = new System.Windows.Forms.DataGridView();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TablaProductos)).BeginInit();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -99,35 +96,54 @@
             // lbl_ThanhToan
             // 
             this.lbl_ThanhToan.AutoSize = true;
-            this.lbl_ThanhToan.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ThanhToan.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ThanhToan.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl_ThanhToan.Location = new System.Drawing.Point(-5, 185);
+            this.lbl_ThanhToan.Location = new System.Drawing.Point(30, 184);
             this.lbl_ThanhToan.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_ThanhToan.MaximumSize = new System.Drawing.Size(130, 0);
             this.lbl_ThanhToan.Name = "lbl_ThanhToan";
-            this.lbl_ThanhToan.Size = new System.Drawing.Size(0, 20);
+            this.lbl_ThanhToan.Size = new System.Drawing.Size(105, 21);
             this.lbl_ThanhToan.TabIndex = 16;
+            this.lbl_ThanhToan.Text = "Thanh toán";
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.iconPictureBox3);
+            this.panel3.Controls.Add(this.iconPictureBox1);
             this.panel3.Controls.Add(this.lbl_Doanhthu);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(925, 45);
+            this.panel3.Location = new System.Drawing.Point(916, 48);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(160, 220);
+            this.panel3.Size = new System.Drawing.Size(185, 240);
             this.panel3.TabIndex = 31;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.FileContract;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 80;
+            this.iconPictureBox1.Location = new System.Drawing.Point(34, 66);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(121, 117);
+            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.iconPictureBox1.TabIndex = 17;
+            this.iconPictureBox1.TabStop = false;
             // 
             // lbl_Doanhthu
             // 
             this.lbl_Doanhthu.AutoSize = true;
-            this.lbl_Doanhthu.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Doanhthu.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Doanhthu.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Doanhthu.Location = new System.Drawing.Point(5, 186);
+            this.lbl_Doanhthu.Location = new System.Drawing.Point(30, 186);
             this.lbl_Doanhthu.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_Doanhthu.MaximumSize = new System.Drawing.Size(130, 0);
             this.lbl_Doanhthu.Name = "lbl_Doanhthu";
-            this.lbl_Doanhthu.Size = new System.Drawing.Size(122, 20);
+            this.lbl_Doanhthu.Size = new System.Drawing.Size(114, 42);
             this.lbl_Doanhthu.TabIndex = 16;
             this.lbl_Doanhthu.Text = "Tổng Doanh thu";
             // 
@@ -139,7 +155,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(158, 49);
+            this.panel4.Size = new System.Drawing.Size(183, 49);
             this.panel4.TabIndex = 0;
             // 
             // label12
@@ -162,21 +178,22 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.panel1.Location = new System.Drawing.Point(250, 45);
+            this.panel1.Location = new System.Drawing.Point(241, 48);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(160, 220);
+            this.panel1.Size = new System.Drawing.Size(185, 240);
             this.panel1.TabIndex = 30;
             // 
             // lbl_NhanVien
             // 
             this.lbl_NhanVien.AutoSize = true;
-            this.lbl_NhanVien.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NhanVien.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_NhanVien.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lbl_NhanVien.Location = new System.Drawing.Point(42, 186);
+            this.lbl_NhanVien.Location = new System.Drawing.Point(31, 186);
             this.lbl_NhanVien.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_NhanVien.MaximumSize = new System.Drawing.Size(130, 0);
             this.lbl_NhanVien.Name = "lbl_NhanVien";
-            this.lbl_NhanVien.Size = new System.Drawing.Size(59, 20);
+            this.lbl_NhanVien.Size = new System.Drawing.Size(70, 21);
             this.lbl_NhanVien.TabIndex = 16;
             this.lbl_NhanVien.Text = "Tên NV";
             // 
@@ -184,7 +201,7 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(20, 64);
+            this.pictureBox2.Location = new System.Drawing.Point(35, 66);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(121, 117);
@@ -200,7 +217,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(158, 49);
+            this.panel2.Size = new System.Drawing.Size(183, 49);
             this.panel2.TabIndex = 0;
             // 
             // label6
@@ -255,24 +272,24 @@
             this.TablaProductos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.TablaProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.TablaProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.TablaProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TablaProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.TablaProductos.ColumnHeadersHeight = 30;
             this.TablaProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.TablaProductos.DefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TablaProductos.DefaultCellStyle = dataGridViewCellStyle12;
             this.TablaProductos.EnableHeadersVisualStyles = false;
             this.TablaProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TablaProductos.Location = new System.Drawing.Point(21, 375);
@@ -290,7 +307,7 @@
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label10.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(19, 9);
+            this.label10.Location = new System.Drawing.Point(30, 9);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(121, 22);
@@ -305,16 +322,16 @@
             this.label16.Location = new System.Drawing.Point(38, 325);
             this.label16.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(180, 27);
+            this.label16.Size = new System.Drawing.Size(223, 27);
             this.label16.TabIndex = 38;
-            this.label16.Text = "Số Phòng đã đặt :";
+            this.label16.Text = "Số Phòng Còn Trống :";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label15.Location = new System.Drawing.Point(25, 7);
+            this.label15.Location = new System.Drawing.Point(38, 9);
             this.label15.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(188, 27);
@@ -324,25 +341,43 @@
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.iconPictureBox1);
+            this.panel11.Controls.Add(this.iconPictureBox3);
             this.panel11.Controls.Add(this.lbl_RoomStatus);
             this.panel11.Controls.Add(this.panel12);
-            this.panel11.Location = new System.Drawing.Point(473, 46);
+            this.panel11.Location = new System.Drawing.Point(464, 49);
             this.panel11.Margin = new System.Windows.Forms.Padding(5);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(160, 220);
+            this.panel11.Size = new System.Drawing.Size(185, 240);
             this.panel11.TabIndex = 35;
+            // 
+            // iconPictureBox3
+            // 
+            this.iconPictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.iconPictureBox3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Stream;
+            this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox3.IconSize = 80;
+            this.iconPictureBox3.Location = new System.Drawing.Point(31, 64);
+            this.iconPictureBox3.Name = "iconPictureBox3";
+            this.iconPictureBox3.Size = new System.Drawing.Size(121, 117);
+            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.iconPictureBox3.TabIndex = 17;
+            this.iconPictureBox3.TabStop = false;
             // 
             // lbl_RoomStatus
             // 
             this.lbl_RoomStatus.AutoSize = true;
-            this.lbl_RoomStatus.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RoomStatus.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_RoomStatus.ForeColor = System.Drawing.Color.Crimson;
-            this.lbl_RoomStatus.Location = new System.Drawing.Point(5, 185);
+            this.lbl_RoomStatus.Location = new System.Drawing.Point(27, 184);
             this.lbl_RoomStatus.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_RoomStatus.MaximumSize = new System.Drawing.Size(130, 0);
             this.lbl_RoomStatus.Name = "lbl_RoomStatus";
-            this.lbl_RoomStatus.Size = new System.Drawing.Size(0, 20);
+            this.lbl_RoomStatus.Size = new System.Drawing.Size(112, 21);
             this.lbl_RoomStatus.TabIndex = 16;
+            this.lbl_RoomStatus.Text = "Room status";
             // 
             // panel12
             // 
@@ -352,18 +387,7 @@
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Margin = new System.Windows.Forms.Padding(5);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(158, 49);
-            this.panel12.TabIndex = 0;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel12.Controls.Add(this.label8);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 0);
-            this.panel12.Margin = new System.Windows.Forms.Padding(5);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(158, 49);
+            this.panel12.Size = new System.Drawing.Size(183, 49);
             this.panel12.TabIndex = 0;
             // 
             // label8
@@ -372,7 +396,7 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label8.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(18, 9);
+            this.label8.Location = new System.Drawing.Point(27, 9);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(121, 22);
@@ -385,21 +409,22 @@
             this.panel9.Controls.Add(this.lbl_Khachhang);
             this.panel9.Controls.Add(this.pictureBox1);
             this.panel9.Controls.Add(this.panel10);
-            this.panel9.Location = new System.Drawing.Point(30, 45);
+            this.panel9.Location = new System.Drawing.Point(21, 48);
             this.panel9.Margin = new System.Windows.Forms.Padding(5);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(160, 220);
+            this.panel9.Size = new System.Drawing.Size(185, 240);
             this.panel9.TabIndex = 36;
             // 
             // lbl_Khachhang
             // 
             this.lbl_Khachhang.AutoSize = true;
-            this.lbl_Khachhang.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Khachhang.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Khachhang.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lbl_Khachhang.Location = new System.Drawing.Point(23, 186);
+            this.lbl_Khachhang.Location = new System.Drawing.Point(31, 185);
             this.lbl_Khachhang.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_Khachhang.MaximumSize = new System.Drawing.Size(130, 0);
             this.lbl_Khachhang.Name = "lbl_Khachhang";
-            this.lbl_Khachhang.Size = new System.Drawing.Size(75, 20);
+            this.lbl_Khachhang.Size = new System.Drawing.Size(84, 21);
             this.lbl_Khachhang.TabIndex = 1;
             this.lbl_Khachhang.Text = "Số khách";
             // 
@@ -407,7 +432,7 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(21, 65);
+            this.pictureBox1.Location = new System.Drawing.Point(32, 66);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(121, 117);
@@ -425,7 +450,7 @@
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Margin = new System.Windows.Forms.Padding(5);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(158, 49);
+            this.panel10.Size = new System.Drawing.Size(183, 49);
             this.panel10.TabIndex = 0;
             // 
             // label3
@@ -457,7 +482,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(17, 10);
+            this.label1.Location = new System.Drawing.Point(28, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 22);
@@ -470,24 +495,40 @@
             this.panel7.Controls.Add(this.iconPictureBox4);
             this.panel7.Controls.Add(this.lbl_Phong);
             this.panel7.Controls.Add(this.panel8);
-            this.panel7.Location = new System.Drawing.Point(697, 45);
+            this.panel7.Location = new System.Drawing.Point(688, 48);
             this.panel7.Margin = new System.Windows.Forms.Padding(5);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(160, 220);
+            this.panel7.Size = new System.Drawing.Size(185, 240);
             this.panel7.TabIndex = 33;
+            // 
+            // iconPictureBox4
+            // 
+            this.iconPictureBox4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.iconPictureBox4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.Hotel;
+            this.iconPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox4.IconSize = 80;
+            this.iconPictureBox4.Location = new System.Drawing.Point(32, 66);
+            this.iconPictureBox4.Name = "iconPictureBox4";
+            this.iconPictureBox4.Size = new System.Drawing.Size(121, 117);
+            this.iconPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.iconPictureBox4.TabIndex = 17;
+            this.iconPictureBox4.TabStop = false;
             // 
             // lbl_Phong
             // 
             this.lbl_Phong.AutoSize = true;
-            this.lbl_Phong.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Phong.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Phong.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lbl_Phong.Location = new System.Drawing.Point(12, 186);
+            this.lbl_Phong.Location = new System.Drawing.Point(28, 186);
             this.lbl_Phong.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lbl_Phong.Text = "Số phòng trống";
-            this.lbl_Phong.Click += new System.EventHandler(this.lbl_Phong_Click);
+            this.lbl_Phong.MaximumSize = new System.Drawing.Size(130, 0);
+            this.lbl_Phong.Name = "lbl_Phong";
+            this.lbl_Phong.Size = new System.Drawing.Size(91, 42);
             this.lbl_Phong.TabIndex = 16;
             this.lbl_Phong.Text = "Số phòng trống";
-            this.lbl_Phong.Click += new System.EventHandler(this.lbl_Phong_Click);
             // 
             // panel8
             // 
@@ -497,16 +538,16 @@
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Margin = new System.Windows.Forms.Padding(5);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(158, 49);
+            this.panel8.Size = new System.Drawing.Size(183, 49);
             this.panel8.TabIndex = 0;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(38, 10);
+            this.label14.Location = new System.Drawing.Point(49, 10);
             this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(70, 22);
@@ -521,7 +562,7 @@
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Margin = new System.Windows.Forms.Padding(5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(157, 49);
+            this.panel6.Size = new System.Drawing.Size(183, 49);
             this.panel6.TabIndex = 0;
             // 
             // panel5
@@ -530,10 +571,10 @@
             this.panel5.Controls.Add(this.iconPictureBox2);
             this.panel5.Controls.Add(this.lbl_ThanhToan);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(1150, 46);
+            this.panel5.Location = new System.Drawing.Point(1141, 49);
             this.panel5.Margin = new System.Windows.Forms.Padding(5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(159, 220);
+            this.panel5.Size = new System.Drawing.Size(185, 240);
             this.panel5.TabIndex = 32;
             // 
             // iconPictureBox2
@@ -545,7 +586,7 @@
             this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 117;
-            this.iconPictureBox2.Location = new System.Drawing.Point(19, 65);
+            this.iconPictureBox2.Location = new System.Drawing.Point(34, 65);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(121, 117);
             this.iconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -590,7 +631,7 @@
             this.Load += new System.EventHandler(this.TrangChu_2_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -601,7 +642,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TablaProductos)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel9.ResumeLayout(false);
@@ -661,10 +702,10 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private System.Windows.Forms.DataGridView dgTC;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
-        private System.Windows.Forms.DataGridView dgTC;
     }
 }

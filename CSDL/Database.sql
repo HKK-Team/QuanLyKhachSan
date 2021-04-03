@@ -63,3 +63,4 @@ alter table khachhang add column TinhTrangThanhToan nvarchar(100);
 
 select count(MAPHONG)  from Phong where Tinhtrang = N'Còn Trống'; 
 select count(MaKh) from khachhang 
+select count(MAGD) from thongkegiaodich
