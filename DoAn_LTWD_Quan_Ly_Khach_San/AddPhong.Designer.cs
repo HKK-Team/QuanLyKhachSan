@@ -43,6 +43,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txtMaPhong = new System.Windows.Forms.TextBox();
             this.dgShowPhong = new System.Windows.Forms.DataGridView();
             this.dgShowTTPhong = new System.Windows.Forms.DataGridView();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgShowPhong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgShowTTPhong)).BeginInit();
@@ -100,6 +101,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnXoa);
             this.groupBox1.Controls.Add(this.btnQuayLai);
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.txtTinhTrang);
@@ -121,7 +123,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // btnQuayLai
             // 
             this.btnQuayLai.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnQuayLai.Location = new System.Drawing.Point(514, 290);
+            this.btnQuayLai.Location = new System.Drawing.Point(639, 290);
             this.btnQuayLai.Name = "btnQuayLai";
             this.btnQuayLai.Size = new System.Drawing.Size(138, 45);
             this.btnQuayLai.TabIndex = 9;
@@ -132,7 +134,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // btnAdd
             // 
             this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdd.Location = new System.Drawing.Point(298, 290);
+            this.btnAdd.Location = new System.Drawing.Point(142, 290);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(138, 45);
             this.btnAdd.TabIndex = 6;
@@ -193,6 +195,18 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.dgShowTTPhong.RowTemplate.Height = 24;
             this.dgShowTTPhong.Size = new System.Drawing.Size(911, 202);
             this.dgShowTTPhong.TabIndex = 6;
+            this.dgShowTTPhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgShowTTPhong_CellClick);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnXoa.Location = new System.Drawing.Point(396, 290);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(138, 45);
+            this.btnXoa.TabIndex = 10;
+            this.btnXoa.Text = "Xóa Phòng";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // AddPhong
             // 
@@ -234,5 +248,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dgShowPhong;
         private System.Windows.Forms.DataGridView dgShowTTPhong;
+        private System.Windows.Forms.Button btnXoa;
     }
 }
