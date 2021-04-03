@@ -16,7 +16,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TrangChu());
+            Application.Run(new AddPhong());
         }
     }
 }

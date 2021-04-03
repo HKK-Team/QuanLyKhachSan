@@ -45,6 +45,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             MySqlcommand.CommandText = "insert into phong values('" + txtMaPhong.Text + "', '" + txtSoGiuong.Text + "', '" + txtDonGia.Text + "','" + txtTinhTrang.Text + "')";
             MySqlcommand.ExecuteNonQuery();
             MessageBox.Show("Bạn đã thêm thành công 1 phòng vào cơ sở dữ liệu.", "Thông Báo!",MessageBoxButtons.OK);
+            table.Clear();
+            showdata();
         }
 
         private void btnQuayLai_Click(object sender, EventArgs e)
@@ -62,33 +64,14 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             showdata();
         }
 
-        private void iconPictureBox1_Click(object sender, EventArgs e)
+        private void btnXoa_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-        private void txtMaPhong_MouseClick(object sender, MouseEventArgs e)
-        {
-            panel3.BackColor = Color.FromArgb(144, 67, 255);
-        }
-
-        private void txtSoGiuong_MouseClick(object sender, MouseEventArgs e)
-        {
-            panel4.BackColor = Color.FromArgb(144, 67, 255);
-        }
-
-        private void txtDonGia_MouseClick(object sender, MouseEventArgs e)
-        {
-            panel5.BackColor = Color.FromArgb(144, 67, 255);
-        }
-
-        private void txtTinhTrang_MouseClick(object sender, MouseEventArgs e)
-        {
-            panel6.BackColor = Color.FromArgb(144, 67, 255);
-        }
-
-        private void dgShowPhong_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            MySqlcommand = Connection.CreateCommand();
+            MySqlcommand.CommandText = "delete from phong where maphong = '"+txtMaPhong.Text+"'";
+            MySqlcommand.ExecuteNonQuery();
+            MessageBox.Show("Bạn đã xóa thành công 1 phòng vào cơ sở dữ liệu.", "Thông Báo!", MessageBoxButtons.OK);
+            table.Clear();
+            showdata();
         }
     }
 }
