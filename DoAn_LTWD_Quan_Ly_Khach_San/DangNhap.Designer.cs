@@ -33,6 +33,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txtTaiKhoan = new System.Windows.Forms.TextBox();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.iconPictureBox8 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox9 = new FontAwesome.Sharp.IconPictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,20 +46,16 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox8 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox9 = new FontAwesome.Sharp.IconPictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDangNhap
@@ -76,7 +76,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // txtTaiKhoan
             // 
             this.txtTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.txtTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTaiKhoan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTaiKhoan.ForeColor = System.Drawing.Color.DarkGray;
@@ -87,12 +87,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txtTaiKhoan.TabIndex = 6;
             this.txtTaiKhoan.Text = "Username";
             this.txtTaiKhoan.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtTaiKhoan_MouseClick);
-//            this.txtTaiKhoan.TextChanged += new System.EventHandler(this.txtTaiKhoan_TextChanged);
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMatKhau.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.ForeColor = System.Drawing.Color.DarkGray;
@@ -107,7 +106,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.panel2.Controls.Add(this.iconPictureBox8);
             this.panel2.Controls.Add(this.iconPictureBox7);
             this.panel2.Controls.Add(this.iconPictureBox6);
@@ -129,6 +128,70 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(389, 827);
             this.panel2.TabIndex = 9;
+            // 
+            // iconPictureBox8
+            // 
+            this.iconPictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconPictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.iconPictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconPictureBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(67)))), ((int)(((byte)(255)))));
+            this.iconPictureBox8.IconChar = FontAwesome.Sharp.IconChar.Twitch;
+            this.iconPictureBox8.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(67)))), ((int)(((byte)(255)))));
+            this.iconPictureBox8.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox8.IconSize = 67;
+            this.iconPictureBox8.Location = new System.Drawing.Point(279, 598);
+            this.iconPictureBox8.Name = "iconPictureBox8";
+            this.iconPictureBox8.Size = new System.Drawing.Size(68, 67);
+            this.iconPictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox8.TabIndex = 19;
+            this.iconPictureBox8.TabStop = false;
+            // 
+            // iconPictureBox7
+            // 
+            this.iconPictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconPictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.iconPictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconPictureBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(67)))), ((int)(((byte)(53)))));
+            this.iconPictureBox7.IconChar = FontAwesome.Sharp.IconChar.Google;
+            this.iconPictureBox7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(67)))), ((int)(((byte)(53)))));
+            this.iconPictureBox7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox7.IconSize = 67;
+            this.iconPictureBox7.Location = new System.Drawing.Point(158, 598);
+            this.iconPictureBox7.Name = "iconPictureBox7";
+            this.iconPictureBox7.Size = new System.Drawing.Size(68, 67);
+            this.iconPictureBox7.TabIndex = 18;
+            this.iconPictureBox7.TabStop = false;
+            // 
+            // iconPictureBox6
+            // 
+            this.iconPictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconPictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.iconPictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconPictureBox6.ForeColor = System.Drawing.Color.SteelBlue;
+            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.Facebook;
+            this.iconPictureBox6.IconColor = System.Drawing.Color.SteelBlue;
+            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox6.IconSize = 67;
+            this.iconPictureBox6.Location = new System.Drawing.Point(42, 598);
+            this.iconPictureBox6.Name = "iconPictureBox6";
+            this.iconPictureBox6.Size = new System.Drawing.Size(68, 67);
+            this.iconPictureBox6.TabIndex = 17;
+            this.iconPictureBox6.TabStop = false;
+            // 
+            // iconPictureBox9
+            // 
+            this.iconPictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconPictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.iconPictureBox9.ForeColor = System.Drawing.Color.Black;
+            this.iconPictureBox9.IconChar = FontAwesome.Sharp.IconChar.Teamspeak;
+            this.iconPictureBox9.IconColor = System.Drawing.Color.Black;
+            this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox9.IconSize = 67;
+            this.iconPictureBox9.Location = new System.Drawing.Point(0, 760);
+            this.iconPictureBox9.Name = "iconPictureBox9";
+            this.iconPictureBox9.Size = new System.Drawing.Size(68, 67);
+            this.iconPictureBox9.TabIndex = 16;
+            this.iconPictureBox9.TabStop = false;
             // 
             // panel5
             // 
@@ -157,7 +220,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // iconPictureBox2
             // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserCircle;
             this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
@@ -190,7 +253,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // iconPictureBox5
             // 
             this.iconPictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.iconPictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconPictureBox5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
@@ -208,7 +271,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // iconPictureBox4
             // 
-            this.iconPictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconPictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.iconPictureBox4.ForeColor = System.Drawing.Color.Black;
             this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.Lock;
             this.iconPictureBox4.IconColor = System.Drawing.Color.Black;
@@ -223,7 +286,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // iconPictureBox3
             // 
-            this.iconPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.iconPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.iconPictureBox3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
@@ -248,70 +311,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // iconPictureBox6
-            // 
-            this.iconPictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconPictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.iconPictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconPictureBox6.ForeColor = System.Drawing.Color.SteelBlue;
-            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.Facebook;
-            this.iconPictureBox6.IconColor = System.Drawing.Color.SteelBlue;
-            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox6.IconSize = 67;
-            this.iconPictureBox6.Location = new System.Drawing.Point(42, 598);
-            this.iconPictureBox6.Name = "iconPictureBox6";
-            this.iconPictureBox6.Size = new System.Drawing.Size(68, 67);
-            this.iconPictureBox6.TabIndex = 17;
-            this.iconPictureBox6.TabStop = false;
-            // 
-            // iconPictureBox7
-            // 
-            this.iconPictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconPictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.iconPictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconPictureBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(67)))), ((int)(((byte)(53)))));
-            this.iconPictureBox7.IconChar = FontAwesome.Sharp.IconChar.Google;
-            this.iconPictureBox7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(67)))), ((int)(((byte)(53)))));
-            this.iconPictureBox7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox7.IconSize = 67;
-            this.iconPictureBox7.Location = new System.Drawing.Point(158, 598);
-            this.iconPictureBox7.Name = "iconPictureBox7";
-            this.iconPictureBox7.Size = new System.Drawing.Size(68, 67);
-            this.iconPictureBox7.TabIndex = 18;
-            this.iconPictureBox7.TabStop = false;
-            // 
-            // iconPictureBox8
-            // 
-            this.iconPictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconPictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.iconPictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconPictureBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(67)))), ((int)(((byte)(255)))));
-            this.iconPictureBox8.IconChar = FontAwesome.Sharp.IconChar.Twitch;
-            this.iconPictureBox8.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(67)))), ((int)(((byte)(255)))));
-            this.iconPictureBox8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox8.IconSize = 67;
-            this.iconPictureBox8.Location = new System.Drawing.Point(279, 598);
-            this.iconPictureBox8.Name = "iconPictureBox8";
-            this.iconPictureBox8.Size = new System.Drawing.Size(68, 67);
-            this.iconPictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox8.TabIndex = 19;
-            this.iconPictureBox8.TabStop = false;
-            // 
-            // iconPictureBox9
-            // 
-            this.iconPictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconPictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.iconPictureBox9.ForeColor = System.Drawing.Color.Black;
-            this.iconPictureBox9.IconChar = FontAwesome.Sharp.IconChar.Teamspeak;
-            this.iconPictureBox9.IconColor = System.Drawing.Color.Black;
-            this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox9.IconSize = 67;
-            this.iconPictureBox9.Location = new System.Drawing.Point(0, 760);
-            this.iconPictureBox9.Name = "iconPictureBox9";
-            this.iconPictureBox9.Size = new System.Drawing.Size(68, 67);
-            this.iconPictureBox9.TabIndex = 16;
-            this.iconPictureBox9.TabStop = false;
-            // 
             // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -324,8 +323,17 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "DangNhap";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

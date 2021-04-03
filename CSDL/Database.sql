@@ -3,7 +3,7 @@ create table KHACHHANG
 (
 	MAKH CHAR(4) PRIMARY KEY,
 	HOTEN NVARCHAR(30),
-	SOCMND CHAR(9) unique,
+	SOCMND CHAR(9) unique MAKH,
 	NGAYDEN DATE,
 	MAPHONG CHAR(4),
 	FOREIGN KEY (MAPHONG) REFERENCES PHONG(MAPHONG),
@@ -15,6 +15,17 @@ CREATE TABLE PHONG
 	SOGIUONG INT,
 	DONGIA INT,
 	TINHTRANG NVARCHAR(12)
+);
+create table THONGKEGIAODICH
+(
+	MAGD INT AUTO_INCREMENT primary KEY,
+    MAKH CHAR(4),
+    foreign key (MAKH) references KHACHHANG(MAKH),
+    MAPHONG CHAR(4),
+    foreign key (MAPHONG) references PHONG(MAPHONG),
+    NGAYDEN datetime,
+    NGAYDI date,
+    SOTIENDATHANHTOAN int
 );
 create table Admin
 (
@@ -49,3 +60,5 @@ select hoten,khachhang.MAPHONG,tinhtrang
 from phong,khachhang
 where phong.MAPHONG = khachhang.MAPHONG;
 alter table khachhang add column TinhTrangThanhToan nvarchar(100);
+
+select* from Phong where Tinhtrang = N'Còn Trống'

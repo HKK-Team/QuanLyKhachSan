@@ -11,14 +11,15 @@ using MySql.Data.MySqlClient;
 
 namespace DoAn_LTWD_Quan_Ly_Khach_San
 {
-    public partial class AddPhong : Form
+    public partial class UpdateRoom : Form
     {
+        //int ans;
         string MySQLConnectionString = @"server=localhost;user id=root;password = 260601;persistsecurityinfo=True;database=ql_khach_san";
         MySqlConnection Connection;
         MySqlCommand MySqlcommand;
         MySqlDataAdapter adapter = new MySqlDataAdapter();
         DataTable table = new DataTable();
-        public AddPhong()
+        public UpdateRoom()
         {
             InitializeComponent();
         }
@@ -29,7 +30,13 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             adapter.SelectCommand = MySqlcommand;
             table.Clear();
             adapter.Fill(table);
-            dgShowTTPhong.DataSource = table;
+            dgShowPhong.DataSource = table;
+            dgShowPhong.Columns["TINHTRANG"].Visible = false;
+
+            DataGridViewCellStyle rowStyle; // = Grid.RowHeadersDefaultCellStyle;
+            rowStyle = dgShowPhong.Rows[0].HeaderCell.Style;
+            rowStyle.BackColor = Color.Red;
+            dgShowPhong.Rows[0].HeaderCell.Style = rowStyle;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,9 +49,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
 
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ThongTinPhong ttp = new ThongTinPhong();
-            ttp.Show();
+            txtDonGia.Clear();
+            txtMaPhong.Clear();
+            txtSoGiuong.Clear();
+            txtTinhTrang.Clear();
         }
 
         private void AddPhong_Load(object sender, EventArgs e)
@@ -52,6 +60,35 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             Connection = new MySqlConnection(MySQLConnectionString);
             Connection.Open();
             showdata();
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void txtMaPhong_MouseClick(object sender, MouseEventArgs e)
+        {
+            panel3.BackColor = Color.FromArgb(144, 67, 255);
+        }
+
+        private void txtSoGiuong_MouseClick(object sender, MouseEventArgs e)
+        {
+            panel4.BackColor = Color.FromArgb(144, 67, 255);
+        }
+
+        private void txtDonGia_MouseClick(object sender, MouseEventArgs e)
+        {
+            panel5.BackColor = Color.FromArgb(144, 67, 255);
+        }
+
+        private void txtTinhTrang_MouseClick(object sender, MouseEventArgs e)
+        {
+            panel6.BackColor = Color.FromArgb(144, 67, 255);
+        }
+
+        private void dgShowPhong_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

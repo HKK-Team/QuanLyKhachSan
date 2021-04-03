@@ -1,7 +1,7 @@
 ﻿
 namespace DoAn_LTWD_Quan_Ly_Khach_San
 {
-    partial class ThongTinKhachHang
+    partial class BookingRoom
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbTinhTrangThanhToan = new System.Windows.Forms.ComboBox();
@@ -47,18 +52,14 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.kháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thanhToánToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tìnhTrạngPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thốngKêGiaoDịchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgShowThongTin = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.groupBox1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgShowThongTin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -66,12 +67,12 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(399, 27);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(572, -86);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 31);
+            this.label1.Size = new System.Drawing.Size(152, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Thông Tin Khách Hàng";
+            this.label1.Text = "Book Room";
             // 
             // groupBox1
             // 
@@ -93,39 +94,47 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(19, 73);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox1.Location = new System.Drawing.Point(0, 66);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1031, 219);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
+            this.groupBox1.Size = new System.Drawing.Size(1324, 280);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Điền Thông Tin Khách Hàng";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cbTinhTrangThanhToan
             // 
+            this.cbTinhTrangThanhToan.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbTinhTrangThanhToan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTinhTrangThanhToan.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.cbTinhTrangThanhToan.FormattingEnabled = true;
             this.cbTinhTrangThanhToan.Items.AddRange(new object[] {
             "Chưa Thanh Toán"});
-            this.cbTinhTrangThanhToan.Location = new System.Drawing.Point(808, 123);
+            this.cbTinhTrangThanhToan.Location = new System.Drawing.Point(1017, 108);
+            this.cbTinhTrangThanhToan.Margin = new System.Windows.Forms.Padding(4);
             this.cbTinhTrangThanhToan.Name = "cbTinhTrangThanhToan";
-            this.cbTinhTrangThanhToan.Size = new System.Drawing.Size(195, 30);
+            this.cbTinhTrangThanhToan.Size = new System.Drawing.Size(265, 34);
             this.cbTinhTrangThanhToan.TabIndex = 18;
             // 
             // cbMaPhong
             // 
+            this.cbMaPhong.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbMaPhong.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMaPhong.FormattingEnabled = true;
-            this.cbMaPhong.Location = new System.Drawing.Point(483, 121);
-            this.cbMaPhong.Margin = new System.Windows.Forms.Padding(4);
+            this.cbMaPhong.Location = new System.Drawing.Point(553, 64);
+            this.cbMaPhong.Margin = new System.Windows.Forms.Padding(5);
             this.cbMaPhong.Name = "cbMaPhong";
-            this.cbMaPhong.Size = new System.Drawing.Size(184, 30);
+            this.cbMaPhong.Size = new System.Drawing.Size(265, 34);
             this.cbMaPhong.TabIndex = 17;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(679, 129);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(882, 113);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 22);
             this.label2.TabIndex = 15;
@@ -133,10 +142,12 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(700, 170);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLuu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Location = new System.Drawing.Point(882, 201);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(5);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(125, 34);
+            this.btnLuu.Size = new System.Drawing.Size(156, 45);
             this.btnLuu.TabIndex = 14;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -144,46 +155,58 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // dateNgayDen
             // 
-            this.dateNgayDen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateNgayDen.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke;
             this.dateNgayDen.CustomFormat = "yyyy/MM/dd";
+            this.dateNgayDen.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateNgayDen.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateNgayDen.Location = new System.Drawing.Point(132, 122);
-            this.dateNgayDen.Margin = new System.Windows.Forms.Padding(4);
+            this.dateNgayDen.Location = new System.Drawing.Point(553, 110);
+            this.dateNgayDen.Margin = new System.Windows.Forms.Padding(5);
             this.dateNgayDen.Name = "dateNgayDen";
-            this.dateNgayDen.Size = new System.Drawing.Size(213, 30);
+            this.dateNgayDen.Size = new System.Drawing.Size(265, 34);
             this.dateNgayDen.TabIndex = 13;
             this.dateNgayDen.Value = new System.DateTime(2021, 3, 30, 0, 0, 0, 0);
             // 
             // txtCMND
             // 
-            this.txtCMND.Location = new System.Drawing.Point(808, 42);
-            this.txtCMND.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCMND.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCMND.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCMND.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCMND.ForeColor = System.Drawing.Color.Black;
+            this.txtCMND.Location = new System.Drawing.Point(1017, 64);
+            this.txtCMND.Margin = new System.Windows.Forms.Padding(5);
+            this.txtCMND.Multiline = true;
             this.txtCMND.Name = "txtCMND";
-            this.txtCMND.Size = new System.Drawing.Size(195, 30);
+            this.txtCMND.Size = new System.Drawing.Size(265, 30);
             this.txtCMND.TabIndex = 12;
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(483, 42);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHoTen.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtHoTen.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoTen.Location = new System.Drawing.Point(128, 113);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(5);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(185, 30);
+            this.txtHoTen.Size = new System.Drawing.Size(265, 34);
             this.txtHoTen.TabIndex = 10;
             // 
             // txtMaKH
             // 
-            this.txtMaKH.Location = new System.Drawing.Point(132, 42);
-            this.txtMaKH.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaKH.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtMaKH.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaKH.Location = new System.Drawing.Point(128, 64);
+            this.txtMaKH.Margin = new System.Windows.Forms.Padding(5);
             this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(213, 30);
+            this.txtMaKH.Size = new System.Drawing.Size(265, 34);
             this.txtMaKH.TabIndex = 8;
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(499, 170);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Location = new System.Drawing.Point(662, 201);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(5);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(125, 34);
+            this.btnXoa.Size = new System.Drawing.Size(156, 45);
             this.btnXoa.TabIndex = 7;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -191,10 +214,12 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(300, 170);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSua.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSua.Location = new System.Drawing.Point(444, 201);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(5);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(125, 34);
+            this.btnSua.Size = new System.Drawing.Size(156, 45);
             this.btnSua.TabIndex = 6;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -202,10 +227,12 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(112, 170);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Location = new System.Drawing.Point(241, 201);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(5);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(125, 34);
+            this.btnThem.Size = new System.Drawing.Size(156, 45);
             this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -214,8 +241,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(701, 46);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(882, 67);
+            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 22);
             this.label7.TabIndex = 4;
@@ -224,8 +251,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(376, 127);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(444, 67);
+            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 22);
             this.label6.TabIndex = 3;
@@ -234,8 +261,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(385, 46);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(22, 116);
+            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 22);
             this.label5.TabIndex = 2;
@@ -244,8 +271,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 127);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(444, 116);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 22);
             this.label4.TabIndex = 1;
@@ -254,110 +281,128 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 46);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(22, 67);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 22);
             this.label3.TabIndex = 0;
             this.label3.Text = "MaKH";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kháchHàngToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 30);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // kháchHàngToolStripMenuItem
-            // 
-            this.kháchHàngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thanhToánToolStripMenuItem,
-            this.tìnhTrạngPhòngToolStripMenuItem,
-            this.thốngKêGiaoDịchToolStripMenuItem,
-            this.thoátToolStripMenuItem});
-            this.kháchHàngToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(126, 26);
-            this.kháchHàngToolStripMenuItem.Text = "Khách Hàng";
-            // 
-            // thanhToánToolStripMenuItem
-            // 
-            this.thanhToánToolStripMenuItem.Name = "thanhToánToolStripMenuItem";
-            this.thanhToánToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
-            this.thanhToánToolStripMenuItem.Text = "Thanh Toán";
-            this.thanhToánToolStripMenuItem.Click += new System.EventHandler(this.thanhToánToolStripMenuItem_Click);
-            // 
-            // tìnhTrạngPhòngToolStripMenuItem
-            // 
-            this.tìnhTrạngPhòngToolStripMenuItem.Name = "tìnhTrạngPhòngToolStripMenuItem";
-            this.tìnhTrạngPhòngToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
-            this.tìnhTrạngPhòngToolStripMenuItem.Text = "Tình Trạng Phòng";
-            this.tìnhTrạngPhòngToolStripMenuItem.Click += new System.EventHandler(this.tìnhTrạngPhòngToolStripMenuItem_Click);
-            // 
-            // thốngKêGiaoDịchToolStripMenuItem
-            // 
-            this.thốngKêGiaoDịchToolStripMenuItem.Name = "thốngKêGiaoDịchToolStripMenuItem";
-            this.thốngKêGiaoDịchToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
-            this.thốngKêGiaoDịchToolStripMenuItem.Text = "Thống Kê Giao Dịch";
-            this.thốngKêGiaoDịchToolStripMenuItem.Click += new System.EventHandler(this.thốngKêGiaoDịchToolStripMenuItem_Click);
-            // 
-            // thoátToolStripMenuItem
-            // 
-            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(263, 26);
-            this.thoátToolStripMenuItem.Text = "Thoát";
-            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click_1);
             // 
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.dgShowThongTin);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(20, 315);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox2.Location = new System.Drawing.Point(0, 356);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(1028, 251);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(5);
+            this.groupBox2.Size = new System.Drawing.Size(1324, 375);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin Khách hàng";
             // 
             // dgShowThongTin
             // 
+            this.dgShowThongTin.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.dgShowThongTin.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgShowThongTin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgShowThongTin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgShowThongTin.Location = new System.Drawing.Point(25, 34);
-            this.dgShowThongTin.Margin = new System.Windows.Forms.Padding(4);
+            this.dgShowThongTin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            this.dgShowThongTin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgShowThongTin.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgShowThongTin.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgShowThongTin.ColumnHeadersHeight = 40;
+            this.dgShowThongTin.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgShowThongTin.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgShowThongTin.EnableHeadersVisualStyles = false;
+            this.dgShowThongTin.GridColor = System.Drawing.Color.Black;
+            this.dgShowThongTin.Location = new System.Drawing.Point(12, 22);
             this.dgShowThongTin.Name = "dgShowThongTin";
+            this.dgShowThongTin.ReadOnly = true;
+            this.dgShowThongTin.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgShowThongTin.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgShowThongTin.RowHeadersWidth = 51;
-            this.dgShowThongTin.Size = new System.Drawing.Size(977, 197);
-            this.dgShowThongTin.TabIndex = 0;
-            this.dgShowThongTin.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgShowThongTin_CellContentClick);
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.dgShowThongTin.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgShowThongTin.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            this.dgShowThongTin.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.dgShowThongTin.RowTemplate.Height = 35;
+            this.dgShowThongTin.Size = new System.Drawing.Size(1304, 345);
+            this.dgShowThongTin.TabIndex = 7;
             // 
-            // ThongTinKhachHang
+            // label8
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.Location = new System.Drawing.Point(501, 10);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(282, 49);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Booking Room";
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            this.iconPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.iconPictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox1.TabIndex = 8;
+            this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
+            // 
+            // BookingRoom
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 606);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            this.ClientSize = new System.Drawing.Size(1338, 736);
+            this.Controls.Add(this.iconPictureBox1);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ThongTinKhachHang";
-            this.Text = "Ứng Dụng Quản Lý Khách Sạn";
+            this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Name = "BookingRoom";
+            this.Text = "Booking room";
             this.Load += new System.EventHandler(this.ThongTinKhachHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgShowThongTin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,21 +420,17 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem kháchHàngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thanhToánToolStripMenuItem;
         private System.Windows.Forms.TextBox txtCMND;
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.DateTimePicker dateNgayDen;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dgShowThongTin;
-        private System.Windows.Forms.ToolStripMenuItem tìnhTrạngPhòngToolStripMenuItem;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbMaPhong;
         private System.Windows.Forms.ComboBox cbTinhTrangThanhToan;
-        private System.Windows.Forms.ToolStripMenuItem thốngKêGiaoDịchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dgShowThongTin;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }

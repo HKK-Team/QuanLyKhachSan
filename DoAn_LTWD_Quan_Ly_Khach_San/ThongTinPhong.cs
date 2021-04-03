@@ -54,32 +54,18 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             InitializeComponent();
         }
 
-        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ThongTinKhachHang formkhachhang = new ThongTinKhachHang();
-            formkhachhang.Show();
-        }
 
-        private void thanhToánToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnTimKiem_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            ThanhToan thanhtoan = new ThanhToan();
-            thanhtoan.Show();
-        }
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            //int ans;
             MySqlcommand = Connection.CreateCommand();
-            MySqlcommand.CommandText = "select* from phong where maphong = '" + cbMaPhong.Text + "' or tinhtrang = '"+cbTinhTrang.Text+"'";
+            MySqlcommand.CommandText = "select* from phong where maphong = '" + cbMaPhong.Text + "' or tinhtrang = '" + cbTinhTrang.Text + "'";
             adapter.SelectCommand = MySqlcommand;
             table.Clear();
             adapter.Fill(table);
             dgShowPhong.DataSource = table;
         }
 
-        private void dgShowPhong_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgShowPhong_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             int ans;
             ans = dgShowPhong.CurrentRow.Index;
@@ -87,28 +73,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             cbTinhTrang.Text = dgShowPhong.Rows[ans].Cells[3].Value.ToString();
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private void iconPictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            AddPhong addp = new AddPhong();
-            addp.Show();
-        }
-
-        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DialogResult a = MessageBox.Show("Bạn có thực sự muốn thoát chương trình hay không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (a == DialogResult.Yes)
-            {
-                this.Close();
-                Application.Exit();
-            }
-        }
-
-        private void thốngKêGiaoDịchToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ThongKeGiaoDich tkgd = new ThongKeGiaoDich();
-            tkgd.Show();
+            this.Close();
         }
     }
 }

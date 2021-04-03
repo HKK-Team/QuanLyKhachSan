@@ -94,7 +94,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void thôngTinKháchHaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ThongTinKhachHang formkhachhang = new ThongTinKhachHang();
+            BookingRoom formkhachhang = new BookingRoom();
             formkhachhang.Show();
         }
 
@@ -108,7 +108,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void thanhToánToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ThanhToan thanhtoan = new ThanhToan();
+            Payment thanhtoan = new Payment();
             thanhtoan.Show();
         }
 
@@ -120,6 +120,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
                 this.Close();
                 Application.Exit();
             }
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

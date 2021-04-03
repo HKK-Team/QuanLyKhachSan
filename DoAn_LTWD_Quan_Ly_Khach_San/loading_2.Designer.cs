@@ -65,10 +65,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Teamspeak;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAstronaut;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 128;
             this.iconPictureBox1.Location = new System.Drawing.Point(283, 191);
@@ -82,7 +82,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(717, 410);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.progressBar1);

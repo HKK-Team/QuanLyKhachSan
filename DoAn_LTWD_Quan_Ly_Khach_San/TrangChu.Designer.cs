@@ -31,7 +31,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         {
             this.components = new System.ComponentModel.Container();
             this.pn_right = new System.Windows.Forms.Panel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -39,11 +42,12 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.panel2 = new System.Windows.Forms.Panel();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.icon_trangchu = new FontAwesome.Sharp.IconButton();
             this.pn_top = new System.Windows.Forms.Panel();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.btn_maxizine = new FontAwesome.Sharp.IconPictureBox();
             this.btn_mixinize = new FontAwesome.Sharp.IconPictureBox();
@@ -54,6 +58,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.pn_right.SuspendLayout();
             this.pn_top.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maxizine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_mixinize)).BeginInit();
@@ -63,8 +68,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // pn_right
             // 
-            this.pn_right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pn_right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.pn_right.Controls.Add(this.iconButton2);
+            this.pn_right.Controls.Add(this.iconButton4);
             this.pn_right.Controls.Add(this.panel7);
+            this.pn_right.Controls.Add(this.panel6);
             this.pn_right.Controls.Add(this.panel5);
             this.pn_right.Controls.Add(this.iconButton3);
             this.pn_right.Controls.Add(this.panel4);
@@ -72,7 +80,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.pn_right.Controls.Add(this.panel2);
             this.pn_right.Controls.Add(this.iconButton6);
             this.pn_right.Controls.Add(this.iconButton5);
-            this.pn_right.Controls.Add(this.iconButton2);
             this.pn_right.Controls.Add(this.panel1);
             this.pn_right.Controls.Add(this.iconButton1);
             this.pn_right.Controls.Add(this.icon_trangchu);
@@ -83,6 +90,46 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.pn_right.Size = new System.Drawing.Size(280, 787);
             this.pn_right.TabIndex = 2;
             // 
+            // iconButton2
+            // 
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Century Gothic", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.HandHoldingUsd;
+            this.iconButton2.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(3, 375);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(277, 60);
+            this.iconButton2.TabIndex = 10;
+            this.iconButton2.Text = "Payment";
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.Font = new System.Drawing.Font("Century Gothic", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Whmcs;
+            this.iconButton4.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.Location = new System.Drawing.Point(3, 307);
+            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(277, 60);
+            this.iconButton4.TabIndex = 20;
+            this.iconButton4.Text = "Update room";
+            this.iconButton4.UseVisualStyleBackColor = true;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
@@ -92,13 +139,22 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.panel7.Size = new System.Drawing.Size(328, 1);
             this.panel7.TabIndex = 0;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(0, 511);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(5, 60);
+            this.panel6.TabIndex = 19;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(0, 519);
+            this.panel5.Location = new System.Drawing.Point(0, 443);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(7, 79);
+            this.panel5.Size = new System.Drawing.Size(5, 60);
             this.panel5.TabIndex = 19;
             // 
             // iconButton3
@@ -106,45 +162,46 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton3.FlatAppearance.BorderSize = 0;
             this.iconButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.Font = new System.Drawing.Font("Century Gothic", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.UsersCog;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.AddressCard;
             this.iconButton3.IconColor = System.Drawing.Color.WhiteSmoke;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 519);
+            this.iconButton3.Location = new System.Drawing.Point(3, 511);
             this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(325, 79);
+            this.iconButton3.Size = new System.Drawing.Size(277, 60);
             this.iconButton3.TabIndex = 18;
             this.iconButton3.Text = "        Admin account";
             this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(0, 431);
+            this.panel4.Location = new System.Drawing.Point(0, 375);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(7, 79);
+            this.panel4.Size = new System.Drawing.Size(5, 60);
             this.panel4.TabIndex = 17;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(0, 344);
+            this.panel3.Location = new System.Drawing.Point(0, 307);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(7, 79);
+            this.panel3.Size = new System.Drawing.Size(5, 60);
             this.panel3.TabIndex = 16;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(0, 257);
+            this.panel2.Location = new System.Drawing.Point(0, 239);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(7, 79);
+            this.panel2.Size = new System.Drawing.Size(5, 60);
             this.panel2.TabIndex = 15;
             // 
             // iconButton6
@@ -152,57 +209,40 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton6.FlatAppearance.BorderSize = 0;
             this.iconButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton6.Font = new System.Drawing.Font("Century Gothic", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton6.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Stream;
             this.iconButton6.IconColor = System.Drawing.Color.WhiteSmoke;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(0, 257);
+            this.iconButton6.Location = new System.Drawing.Point(3, 239);
             this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(325, 79);
+            this.iconButton6.Size = new System.Drawing.Size(277, 60);
             this.iconButton6.TabIndex = 14;
             this.iconButton6.Text = "    Room status";
             this.iconButton6.UseVisualStyleBackColor = true;
+            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
             // 
             // iconButton5
             // 
             this.iconButton5.FlatAppearance.BorderSize = 0;
             this.iconButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton5.Font = new System.Drawing.Font("Century Gothic", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.FileContract;
             this.iconButton5.IconColor = System.Drawing.Color.WhiteSmoke;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(3, 431);
+            this.iconButton5.Location = new System.Drawing.Point(3, 443);
             this.iconButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(325, 79);
+            this.iconButton5.Size = new System.Drawing.Size(277, 60);
             this.iconButton5.TabIndex = 13;
             this.iconButton5.Text = "           Payment statistics";
             this.iconButton5.UseVisualStyleBackColor = true;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.HandHoldingUsd;
-            this.iconButton2.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 344);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(325, 79);
-            this.iconButton2.TabIndex = 10;
-            this.iconButton2.Text = "Pay";
-            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // panel1
             // 
@@ -210,7 +250,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.panel1.Location = new System.Drawing.Point(0, 171);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(7, 79);
+            this.panel1.Size = new System.Drawing.Size(5, 60);
             this.panel1.TabIndex = 9;
             // 
             // iconButton1
@@ -218,7 +258,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.Font = new System.Drawing.Font("Century Gothic", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Hotel;
             this.iconButton1.IconColor = System.Drawing.Color.WhiteSmoke;
@@ -227,36 +267,40 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton1.Location = new System.Drawing.Point(3, 171);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(325, 79);
+            this.iconButton1.Size = new System.Drawing.Size(277, 60);
             this.iconButton1.TabIndex = 8;
-            this.iconButton1.Text = "Book room";
+            this.iconButton1.Text = "Booking room";
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // icon_trangchu
             // 
-            this.icon_trangchu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.icon_trangchu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.icon_trangchu.FlatAppearance.BorderSize = 0;
             this.icon_trangchu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.icon_trangchu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.icon_trangchu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.icon_trangchu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.icon_trangchu.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.icon_trangchu.IconChar = FontAwesome.Sharp.IconChar.Teamspeak;
-            this.icon_trangchu.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.icon_trangchu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.icon_trangchu.IconChar = FontAwesome.Sharp.IconChar.UserAstronaut;
+            this.icon_trangchu.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
             this.icon_trangchu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icon_trangchu.IconSize = 65;
             this.icon_trangchu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.icon_trangchu.Location = new System.Drawing.Point(0, 33);
             this.icon_trangchu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.icon_trangchu.Name = "icon_trangchu";
-            this.icon_trangchu.Size = new System.Drawing.Size(325, 126);
+            this.icon_trangchu.Size = new System.Drawing.Size(280, 126);
             this.icon_trangchu.TabIndex = 0;
             this.icon_trangchu.Text = "     HKK TEAM";
             this.icon_trangchu.UseVisualStyleBackColor = false;
+            this.icon_trangchu.Click += new System.EventHandler(this.icon_trangchu_Click);
             // 
             // pn_top
             // 
             this.pn_top.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pn_top.Controls.Add(this.lblTitleChildForm);
+            this.pn_top.Controls.Add(this.iconCurrentChildForm);
             this.pn_top.Controls.Add(this.iconPictureBox1);
             this.pn_top.Controls.Add(this.btn_maxizine);
             this.pn_top.Controls.Add(this.btn_mixinize);
@@ -269,6 +313,33 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.pn_top.Size = new System.Drawing.Size(1338, 51);
             this.pn_top.TabIndex = 3;
             this.pn_top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_top_MouseDown);
+            // 
+            // lblTitleChildForm
+            // 
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Black;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(117, 9);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(70, 27);
+            this.lblTitleChildForm.TabIndex = 3;
+            this.lblTitleChildForm.Text = "Home";
+            // 
+            // iconCurrentChildForm
+            // 
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.UserAstronaut;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconCurrentChildForm.IconSize = 40;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(61, 4);
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(50, 40);
+            this.iconCurrentChildForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconCurrentChildForm.TabIndex = 2;
+            this.iconCurrentChildForm.TabStop = false;
+            this.iconCurrentChildForm.Click += new System.EventHandler(this.iconCurrentChildForm_Click);
             // 
             // iconPictureBox1
             // 
@@ -374,10 +445,12 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // timer1
             // 
+            this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timer2
             // 
+            this.timer2.Interval = 15;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // TrangChu
@@ -397,6 +470,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.Load += new System.EventHandler(this.TrangChu_Load);
             this.pn_right.ResumeLayout(false);
             this.pn_top.ResumeLayout(false);
+            this.pn_top.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maxizine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_mixinize)).EndInit();
@@ -429,5 +504,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private System.Windows.Forms.Panel panel6;
+        private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
+        private System.Windows.Forms.Label lblTitleChildForm;
     }
 }

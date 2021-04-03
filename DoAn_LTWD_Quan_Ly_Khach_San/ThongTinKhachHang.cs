@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace DoAn_LTWD_Quan_Ly_Khach_San
 {
-    public partial class ThongTinKhachHang : Form
+    public partial class BookingRoom : Form
     {
         // khai báo một chuỗi kết nối = MySQLConnectionString
         string MySQLConnectionString = @"server=localhost;user id=root;password = 260601;persistsecurityinfo=True;database=ql_khach_san";
@@ -21,7 +21,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         MySqlDataAdapter adapter = new MySqlDataAdapter();
         // khởi tạo đối tượng có tên là table dùng để lưu các giá trị của bảng vào database
         DataTable table = new DataTable();
-        public ThongTinKhachHang()
+        public BookingRoom()
         {
             InitializeComponent();
         }
@@ -102,7 +102,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void thanhToánToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ThanhToan thanhtoan = new ThanhToan();
+            Payment thanhtoan = new Payment();
             thanhtoan.Show();
         }
 
@@ -147,6 +147,16 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
                 this.Close();
                 Application.Exit();
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

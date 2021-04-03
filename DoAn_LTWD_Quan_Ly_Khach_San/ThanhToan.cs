@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace DoAn_LTWD_Quan_Ly_Khach_San
 {
-    public partial class ThanhToan : Form
+    public partial class Payment : Form
     {
         string MySQLConnectionString = @"server=localhost;user id=root;password = 260601;persistsecurityinfo=True;database=ql_khach_san";
         MySqlConnection Connection; // khởi tạo chuỗi kết nối
@@ -19,7 +19,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         MySqlDataAdapter adapter = new MySqlDataAdapter();  // khởi tạo vùng lưu trữ hiện hành
         DataTable table = new DataTable(); // khởi tạo một bẳng để lưu trữ các giá trị
         int ans,sum;
-        public ThanhToan()
+        public Payment()
         {
             InitializeComponent();
         }
@@ -64,7 +64,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ThongTinKhachHang formkhachhang = new ThongTinKhachHang();
+            BookingRoom formkhachhang = new BookingRoom();
             formkhachhang.Show();
         }
 
@@ -126,7 +126,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Xin chào " + txtHoTen.Text + ". Số tiền bạn cần phải thanh toán là : " + lbtongtien.Text + " ! " + "Bạn thật sự có muốn thanh toán hay không?","Thông Báo!",MessageBoxButtons.OK);
+            MessageBox.Show("Xin chào " + txtHoTen.Text + ". Số tiền bạn cần phải thanh toán là : " + lbtongtien.Text + " ! " + "Bạn thật sự có muốn thanh toán hay không?","Thông Báo!",MessageBoxButtons.YesNo);
             /// thực hiện thao tác update lại tình trạng của phòng ở bảng phòng
             MySqlcommand = Connection.CreateCommand();
             // khi chúng ta thanh toán hệ thống sẽ liên kết với cơ sở dữ liệu và cập nhật lại tình trạng của phòng trong bảng phòng
@@ -165,6 +165,21 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.Hide();
             ThongKeGiaoDich tkgd = new ThongKeGiaoDich();
             tkgd.Show();
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
 
         private void dgShowKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
