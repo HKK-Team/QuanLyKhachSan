@@ -173,7 +173,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(277, 60);
             this.iconButton3.TabIndex = 18;
-            this.iconButton3.Text = "        Admin account";
+            this.iconButton3.Text = "My profile";
             this.iconButton3.UseVisualStyleBackColor = true;
             this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
@@ -240,7 +240,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(277, 60);
             this.iconButton5.TabIndex = 13;
-            this.iconButton5.Text = "           Payment statistics";
+            this.iconButton5.Text = "            Revenue statistics";
             this.iconButton5.UseVisualStyleBackColor = true;
             this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 

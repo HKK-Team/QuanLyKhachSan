@@ -50,4 +50,49 @@ from phong,khachhang
 where phong.MAPHONG = khachhang.MAPHONG;
 alter table khachhang add column TinhTrangThanhToan nvarchar(100);
 
+select count(MAPHONG)  from Phong where Tinhtrang = N'Còn Trống'; 
+select count(MaKh) from khachhang ;
+select count(MAGD) from thongkegiaodich;
+INSERT INTO admin(TaiKhoan,matkhau) VALUES('MinhKhanh','020901'); 
+INSERT INTO admin(TaiKhoan,matkhau) VALUES('KhanhVu','020901'); 
+
+/* capnhat admin */
+alter table admin
+add column UserID int AUTO_INCREMENT primary key,
+add column Firstname nvarchar(20) not null,
+add column lastname nvarchar(20) not null,
+add column Position nvarchar (100) not null,
+add column Email nvarchar(150)not null;
+
+ALTER TABLE admin CHANGE TaiKhoan LoginName nvarchar(100);
+ALTER TABLE admin CHANGE MatKhau Password nvarchar(100);
+
+
+UPDATE admin 
+SET 
+	Firstname = 'Vu',
+    lastname = 'Quoc Khanh',
+    Position ='Staff',
+    email = '0982483015kk@gmail.com'
+WHERE
+    UserId = 3;
+    
+/* chuan hoa tien */
+DELIMITER $$
+CREATE PROCEDURE  usp_tongten ()
+BEGIN
+set @a  = (select sum(SOTIENDATHANHTOAN) from thongkegiaodich);
+set @b = (select length(@a));
+set @c = (select left(@a, 3));
+IF  (select @b = 6 ) then select concat((select left(@a, 3)),' ','K');
+elseif  (select @b = 7)  then select concat((select left(@a, 1)),' ','Tr');
+elseif (select @b = 8 ) then select concat((select left(@a, 2)),' ','Tr');
+elseif (select @b = 9) then select concat((select left(@a, 3)),' ','Tr');
+elseif (select @b = 10 ) then select concat((select left(@a, 1)),' ','Tỉ');
+end if;
+END;
+DELIMITER;
+call ql_khach_san.usp_tongten();
+select lastname from admin where
+
 select* from Phong where Tinhtrang = N'Còn Trống'

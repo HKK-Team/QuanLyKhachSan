@@ -57,19 +57,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             dgShowKhachHang.DataSource = table;
             Connection.Close();
         }
-        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            BookingRoom formkhachhang = new BookingRoom();
-            formkhachhang.Show();
-        }
-
-        private void thôngTinPhòngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ThongTinPhong Phong = new ThongTinPhong();
-            Phong.Show();
-        }
+    
 
         private void btnTimKiemTheoMaPhong_Click(object sender, EventArgs e)
         {
@@ -132,7 +120,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             /// thực hiện thao tác update lại tình trạng của phòng ở bảng phòng
             MySqlcommand = Connection.CreateCommand();
             // khi chúng ta thanh toán hệ thống sẽ liên kết với cơ sở dữ liệu và cập nhật lại tình trạng của phòng trong bảng phòng
-            MySqlcommand.CommandText = "update phong set tinhtrang = 'Còn Trống' where maphong = '" + cbMaPhong.Text +"'";
+            MySqlcommand.CommandText = "update phong set tinhtrang = 'Còn Trống' where maphong = '" + cbMaPhong.Text + "'";
             adapter.SelectCommand = MySqlcommand;
             MySqlcommand.ExecuteNonQuery();
             /// thực hiện thao tác update lại tình trạng thanh toán xuông bảng khách hàng
@@ -147,20 +135,14 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             dgShowKhachHang.DataSource = table;
             /// thực hiện tạo hóa đơn cho khách hàng và lưu thông tin xuống bảng thống kê giao dịch
             MySqlcommand = Connection.CreateCommand();
-            MySqlcommand.CommandText = "insert into thongkegiaodich(makh,maphong,ngayden,ngaydi,sotiendathanhtoan) values('" +lbMaKH.Text+ "','"+cbMaPhong.Text+"','"+dateNgayDen.Text+ "',curdate(),'"+sum+"')";
+            MySqlcommand.CommandText = "insert into thongkegiaodich(makh,maphong,ngayden,ngaydi,sotiendathanhtoan) values('" + lbMaKH.Text + "','" + cbMaPhong.Text + "','" + dateNgayDen.Text + "',curdate(),'" + sum + "')";
             adapter.SelectCommand = MySqlcommand;
             MySqlcommand.ExecuteNonQuery();
             Connection.Close();
         }
-
-        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        private void iconPictureBox1_Click(object sender, EventArgs e)
         {
-            DialogResult a = MessageBox.Show("Bạn có thực sự muốn thoát chương trình hay không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (a == DialogResult.Yes)
-            {
-                this.Close();
-                Application.Exit();
-            }
+            this.Close();
         }
 
         private void thốngKêGiaoDịchToolStripMenuItem_Click(object sender, EventArgs e)

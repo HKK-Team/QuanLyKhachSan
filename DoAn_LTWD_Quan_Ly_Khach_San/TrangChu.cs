@@ -197,6 +197,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+            show(new Profile());
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -207,7 +208,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void iconButton5_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
-            show(new ThongKeGiaoDich());
+            show(new ThongKeDoanhThu());
         }
 
         private void iconButton6_Click(object sender, EventArgs e)

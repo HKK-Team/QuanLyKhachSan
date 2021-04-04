@@ -412,7 +412,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
             this.iconPictureBox1.IconColor = System.Drawing.Color.WhiteSmoke;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.iconPictureBox1.Location = new System.Drawing.Point(3, 0);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

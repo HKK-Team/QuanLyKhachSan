@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu_2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbl_ThanhToan = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -51,6 +51,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.lbl_RoomStatus = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -71,6 +72,9 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.dgTC = new System.Windows.Forms.DataGridView();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -79,6 +83,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TablaProductos)).BeginInit();
             this.panel11.SuspendLayout();
+            this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -91,6 +96,9 @@
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgTC)).BeginInit();
+            this.panel14.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel16.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_ThanhToan
@@ -109,8 +117,8 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.iconPictureBox1);
             this.panel3.Controls.Add(this.lbl_Doanhthu);
+            this.panel3.Controls.Add(this.panel15);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(916, 48);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
@@ -121,16 +129,15 @@
             // iconPictureBox1
             // 
             this.iconPictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.iconPictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.FileContract;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 80;
-            this.iconPictureBox1.Location = new System.Drawing.Point(34, 66);
+            this.iconPictureBox1.IconSize = 76;
+            this.iconPictureBox1.Location = new System.Drawing.Point(24, 18);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(121, 117);
-            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.iconPictureBox1.Size = new System.Drawing.Size(76, 83);
+            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconPictureBox1.TabIndex = 17;
             this.iconPictureBox1.TabStop = false;
             // 
@@ -198,7 +205,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(35, 66);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
@@ -271,24 +277,24 @@
             this.TablaProductos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.TablaProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.TablaProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.TablaProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TablaProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.TablaProductos.ColumnHeadersHeight = 30;
             this.TablaProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.TablaProductos.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TablaProductos.DefaultCellStyle = dataGridViewCellStyle4;
             this.TablaProductos.EnableHeadersVisualStyles = false;
             this.TablaProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TablaProductos.Location = new System.Drawing.Point(21, 375);
@@ -340,7 +346,7 @@
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.iconPictureBox3);
+            this.panel11.Controls.Add(this.panel13);
             this.panel11.Controls.Add(this.lbl_RoomStatus);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Location = new System.Drawing.Point(464, 49);
@@ -349,19 +355,26 @@
             this.panel11.Size = new System.Drawing.Size(185, 240);
             this.panel11.TabIndex = 35;
             // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.iconPictureBox3);
+            this.panel13.Location = new System.Drawing.Point(31, 65);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(121, 117);
+            this.panel13.TabIndex = 18;
+            // 
             // iconPictureBox3
             // 
             this.iconPictureBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.iconPictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Stream;
-            this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 80;
-            this.iconPictureBox3.Location = new System.Drawing.Point(31, 64);
+            this.iconPictureBox3.IconSize = 76;
+            this.iconPictureBox3.Location = new System.Drawing.Point(23, 23);
             this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(121, 117);
-            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.iconPictureBox3.Size = new System.Drawing.Size(76, 83);
+            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconPictureBox3.TabIndex = 17;
             this.iconPictureBox3.TabStop = false;
             // 
@@ -429,7 +442,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(32, 66);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
@@ -491,9 +503,9 @@
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.iconPictureBox4);
             this.panel7.Controls.Add(this.lbl_Phong);
             this.panel7.Controls.Add(this.panel8);
+            this.panel7.Controls.Add(this.panel14);
             this.panel7.Location = new System.Drawing.Point(688, 48);
             this.panel7.Margin = new System.Windows.Forms.Padding(5);
             this.panel7.Name = "panel7";
@@ -503,16 +515,15 @@
             // iconPictureBox4
             // 
             this.iconPictureBox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.iconPictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.Hotel;
-            this.iconPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 80;
-            this.iconPictureBox4.Location = new System.Drawing.Point(32, 66);
+            this.iconPictureBox4.IconSize = 76;
+            this.iconPictureBox4.Location = new System.Drawing.Point(23, 18);
             this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(121, 117);
-            this.iconPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.iconPictureBox4.Size = new System.Drawing.Size(76, 83);
+            this.iconPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconPictureBox4.TabIndex = 17;
             this.iconPictureBox4.TabStop = false;
             // 
@@ -567,7 +578,7 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.iconPictureBox2);
+            this.panel5.Controls.Add(this.panel16);
             this.panel5.Controls.Add(this.lbl_ThanhToan);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Location = new System.Drawing.Point(1141, 49);
@@ -579,16 +590,15 @@
             // iconPictureBox2
             // 
             this.iconPictureBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.iconPictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.HandHoldingUsd;
-            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 117;
-            this.iconPictureBox2.Location = new System.Drawing.Point(34, 65);
+            this.iconPictureBox2.IconSize = 76;
+            this.iconPictureBox2.Location = new System.Drawing.Point(22, 18);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(121, 117);
-            this.iconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.iconPictureBox2.Size = new System.Drawing.Size(76, 83);
+            this.iconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconPictureBox2.TabIndex = 17;
             this.iconPictureBox2.TabStop = false;
             // 
@@ -603,6 +613,30 @@
             this.dgTC.RowTemplate.Height = 24;
             this.dgTC.Size = new System.Drawing.Size(635, 254);
             this.dgTC.TabIndex = 40;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.iconPictureBox4);
+            this.panel14.Location = new System.Drawing.Point(32, 66);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(121, 117);
+            this.panel14.TabIndex = 41;
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.iconPictureBox1);
+            this.panel15.Location = new System.Drawing.Point(34, 66);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(121, 117);
+            this.panel15.TabIndex = 42;
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.iconPictureBox2);
+            this.panel16.Location = new System.Drawing.Point(34, 65);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(121, 117);
+            this.panel16.TabIndex = 42;
             // 
             // TrangChu_2
             // 
@@ -641,6 +675,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TablaProductos)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            this.panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
@@ -660,6 +695,9 @@
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgTC)).EndInit();
+            this.panel14.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -706,5 +744,9 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panel16;
     }
 }
