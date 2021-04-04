@@ -3,7 +3,7 @@ create table KHACHHANG
 (
 	MAKH CHAR(4) PRIMARY KEY,
 	HOTEN NVARCHAR(30),
-	SOCMND CHAR(9) unique MAKH,
+	SOCMND CHAR(9) unique,
 	NGAYDEN DATE,
 	MAPHONG CHAR(4),
 	FOREIGN KEY (MAPHONG) REFERENCES PHONG(MAPHONG),
@@ -26,17 +26,6 @@ CREATE TABLE PHONG
 	SOGIUONG INT,
 	DONGIA INT,
 	TINHTRANG NVARCHAR(12)
-);
-create table THONGKEGIAODICH
-(
-	MAGD INT AUTO_INCREMENT primary KEY,
-    MAKH CHAR(4),
-    foreign key (MAKH) references KHACHHANG(MAKH),
-    MAPHONG CHAR(4),
-    foreign key (MAPHONG) references PHONG(MAPHONG),
-    NGAYDEN datetime,
-    NGAYDI date,
-    SOTIENDATHANHTOAN int
 );
 create table Admin
 (
@@ -62,7 +51,7 @@ INSERT INTO PHONG(MAPHONG,SOGIUONG,DONGIA,TINHTRANG) VALUES('P15',5,650000,'Còn
 update phong set tinhtrang = 'Còn Trống' where maphong = 'P15';
 insert into admin(taikhoan,matkhau) values('admin26062001@gmail.com','admin2001');	
 select * from admin;
-Select PHONG.MAPHONG,KHACHHANG.HOTEN, curdate() - khachhang.ngayden as "Ngay ở",((curdate() - khachhang.NGAYDEN) *phong.DONGIA) as lbtongtien
+Select khachhang.makh,ngayden,PHONG.MAPHONG,KHACHHANG.HOTEN, curdate() - khachhang.ngayden as "Ngay ở",((curdate() - khachhang.NGAYDEN) *phong.DONGIA) as lbtongtien
 FROM PHONG Inner Join KHACHHANG
 ON PHONG.MAPHONG = KHACHHANG.MAPHONG
 Where KHACHHANG.MAPHONG = phong.maphong;
@@ -71,5 +60,9 @@ select hoten,khachhang.MAPHONG,tinhtrang
 from phong,khachhang
 where phong.MAPHONG = khachhang.MAPHONG;
 alter table khachhang add column TinhTrangThanhToan nvarchar(100);
-
-select* from Phong where Tinhtrang = N'Còn Trống'
+select curdate() as ngayhientai;
+select ngayden from khachhang;
+delete from thongkegiaodich where makh = 'KH01' or MAPHONG = 'P01';
+select count(MAPHONG) as soluongphong from phong where TINHTRANG = 'Còn Trống';
+select count(MAGD) as TongBill from thongkegiaodich;
+select sum(SOTIENDATHANHTOAN) as tongdoanhthu from thongkegiaodich

@@ -35,6 +35,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             showdata();
             Showlb_Phong();
             ShowSoPhongDD();
+            ShowDoanhThu();
             ShowBill();
 
         }
@@ -60,6 +61,19 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             while (Read_Data.Read())
             {
                 lbl_RoomStatus.Text = "Có " + Read_Data[0].ToString() + " phòng đã đặt";
+            }
+            Read_Data.Close();
+            Connection.Close();
+        }
+        public void ShowDoanhThu()
+        {
+            Connection.Open();
+            Mysql = "select sum(SOTIENDATHANHTOAN) as tongdoanhthu from thongkegiaodich";
+            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
+            Read_Data = mySqlCommand.ExecuteReader();
+            while (Read_Data.Read())
+            {
+                lbl_Doanhthu.Text = "DT  :  " + Read_Data[0].ToString() +"VNĐ";
             }
             Read_Data.Close();
             Connection.Close();
