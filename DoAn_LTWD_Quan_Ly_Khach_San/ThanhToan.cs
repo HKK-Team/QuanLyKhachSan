@@ -43,28 +43,25 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void ThanhToan_Load(object sender, EventArgs e)
         {
             Connection = new MySqlConnection(MySQLConnectionString);
-            Connection.Open();
             showdata();
             ThanhToanLoad();
         }
         void showdata()
         {
-            dgShowKhachHang.Rows.Clear();
+            Connection.Open();
             MySqlcommand = Connection.CreateCommand();
             MySqlcommand.CommandText = "select* from khachhang";
              adapter.SelectCommand = MySqlcommand;
             table.Clear();
             adapter.Fill(table);
             dgShowKhachHang.DataSource = table;
-            ans  = dgShowKhachHang.CurrentRow.Index;    // đổ giá trị vào datagridview
-            txtHoTen.Text = dgShowKhachHang.Rows[ans].Cells[1].Value.ToString();
-            cbMaPhong.Text = dgShowKhachHang.Rows[ans].Cells[4].Value.ToString();
             Connection.Close();
         }
-    
+
 
         private void btnTimKiemTheoMaPhong_Click(object sender, EventArgs e)
         {
+            Connection.Open();
             MySqlcommand = Connection.CreateCommand();
             MySqlcommand.CommandText = "select* from khachhang where maphong = '" + cbMaPhong.Text + "'";
             adapter.SelectCommand = MySqlcommand;
@@ -74,10 +71,12 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             ans = dgShowKhachHang.CurrentRow.Index;
             txtHoTen.Text = dgShowKhachHang.Rows[ans].Cells[1].Value.ToString();
             cbMaPhong.Text = dgShowKhachHang.Rows[ans].Cells[4].Value.ToString();
+            Connection.Close();
         }
 
         private void btnTimKiemTheoHoTen_Click(object sender, EventArgs e)
         {
+            Connection.Open();
             MySqlcommand = Connection.CreateCommand();
             // câu lệnh truy vấn
             MySqlcommand.CommandText = "select* from khachhang where hoten = '" + txtHoTen.Text + "'";
@@ -89,6 +88,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             ans = dgShowKhachHang.CurrentRow.Index;
             txtHoTen.Text = dgShowKhachHang.Rows[ans].Cells[1].Value.ToString();
             cbMaPhong.Text = dgShowKhachHang.Rows[ans].Cells[4].Value.ToString();
+            Connection.Close();
         }
         string Mysql;
         MySqlDataReader Read_Data; // khởi tạo 1 biến để đọc giá trị
@@ -110,15 +110,17 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
                 sum = Convert.ToInt32(Read_Data[5].ToString());
             }
             Read_Data.Close();
+            Connection.Close();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Xin chào " + txtHoTen.Text + ". Số tiền bạn cần phải thanh toán là : " + lbtongtien.Text + " ! " + "Bạn thật sự có muốn thanh toán hay không?", "Thông Báo!", MessageBoxButtons.YesNo);
+            MessageBox.Show("Xin chào " + txtHoTen.Text + ". Số tiền bạn cần phải thanh toán là : " + lbtongtien.Text + " ! " + "Bạn thật sự có muốn thanh toán hay không?","Thông Báo!",MessageBoxButtons.YesNo);
+            Connection.Open();
             /// thực hiện thao tác update lại tình trạng của phòng ở bảng phòng
             MySqlcommand = Connection.CreateCommand();
             // khi chúng ta thanh toán hệ thống sẽ liên kết với cơ sở dữ liệu và cập nhật lại tình trạng của phòng trong bảng phòng
-            MySqlcommand.CommandText = "update phong set tinhtrang = 'Còn Trống' where maphong = '" + cbMaPhong.Text + "'";
+            MySqlcommand.CommandText = "update phong set tinhtrang = 'Còn Trống' where maphong = '" + cbMaPhong.Text +"'";
             adapter.SelectCommand = MySqlcommand;
             MySqlcommand.ExecuteNonQuery();
             /// thực hiện thao tác update lại tình trạng thanh toán xuông bảng khách hàng
@@ -133,13 +135,24 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             dgShowKhachHang.DataSource = table;
             /// thực hiện tạo hóa đơn cho khách hàng và lưu thông tin xuống bảng thống kê giao dịch
             MySqlcommand = Connection.CreateCommand();
-            MySqlcommand.CommandText = "insert into thongkegiaodich(makh,maphong,ngayden,ngaydi,sotiendathanhtoan) values('" + lbMaKH.Text + "','" + cbMaPhong.Text + "','" + dateNgayDen.Text + "',curdate(),'" + sum + "')";
+            MySqlcommand.CommandText = "insert into thongkegiaodich(makh,maphong,ngayden,ngaydi,sotiendathanhtoan) values('" +lbMaKH.Text+ "','"+cbMaPhong.Text+"','"+dateNgayDen.Text+ "',curdate(),'"+sum+"')";
             adapter.SelectCommand = MySqlcommand;
             MySqlcommand.ExecuteNonQuery();
+            Connection.Close();
         }
+
         private void iconPictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgShowKhachHang_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int ans;
+            ans = dgShowKhachHang.CurrentRow.Index;
+            txtHoTen.Text = dgShowKhachHang.Rows[ans].Cells[1].Value.ToString();
+            dateNgayDen.Text = dgShowKhachHang.Rows[ans].Cells[3].Value.ToString();
+            cbMaPhong.Text = dgShowKhachHang.Rows[ans].Cells[4].Value.ToString();
         }
 
     }

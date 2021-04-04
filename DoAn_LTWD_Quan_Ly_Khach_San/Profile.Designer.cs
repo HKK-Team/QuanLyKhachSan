@@ -65,16 +65,21 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(244)))));
             this.iconPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.iconPictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
@@ -92,10 +97,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(256, 29);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(195)))), ((int)(((byte)(223)))));
+            this.label1.Location = new System.Drawing.Point(248, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 49);
             this.label1.TabIndex = 10;
@@ -103,14 +108,17 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(244)))));
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.iconPictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(857, 736);
+            this.panel2.Size = new System.Drawing.Size(1338, 736);
             this.panel2.TabIndex = 11;
             // 
             // panel3
@@ -128,7 +136,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.iconPictureBox2);
-            this.panel3.Location = new System.Drawing.Point(55, 93);
+            this.panel3.Location = new System.Drawing.Point(32, 84);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(655, 451);
             this.panel3.TabIndex = 11;
@@ -147,7 +155,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // txt_Position
             // 
-            this.txt_Position.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_Position.BackColor = System.Drawing.Color.White;
             this.txt_Position.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_Position.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Position.ForeColor = System.Drawing.SystemColors.WindowFrame;
@@ -160,7 +168,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // txt_Email
             // 
-            this.txt_Email.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_Email.BackColor = System.Drawing.Color.White;
             this.txt_Email.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_Email.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Email.ForeColor = System.Drawing.SystemColors.WindowFrame;
@@ -173,7 +181,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // txt_Lname
             // 
-            this.txt_Lname.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_Lname.BackColor = System.Drawing.Color.White;
             this.txt_Lname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_Lname.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Lname.ForeColor = System.Drawing.SystemColors.WindowFrame;
@@ -186,7 +194,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // txt_Fname
             // 
-            this.txt_Fname.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_Fname.BackColor = System.Drawing.Color.White;
             this.txt_Fname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_Fname.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Fname.ForeColor = System.Drawing.SystemColors.WindowFrame;
@@ -199,7 +207,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // txt_User
             // 
-            this.txt_User.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_User.BackColor = System.Drawing.Color.White;
             this.txt_User.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_User.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_User.ForeColor = System.Drawing.SystemColors.WindowFrame;
@@ -267,7 +275,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // iconPictureBox2
             // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
             this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserAstronaut;
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
@@ -287,18 +295,16 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txt_EPasswordd.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_EPasswordd.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_EPasswordd.Location = new System.Drawing.Point(76, 383);
-            this.txt_EPasswordd.Multiline = true;
             this.txt_EPasswordd.Name = "txt_EPasswordd";
-            this.txt_EPasswordd.Size = new System.Drawing.Size(373, 25);
+            this.txt_EPasswordd.Size = new System.Drawing.Size(373, 27);
             this.txt_EPasswordd.TabIndex = 2;
-            this.txt_EPasswordd.Text = "000000";
             this.txt_EPasswordd.UseSystemPasswordChar = true;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label9.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label9.Location = new System.Drawing.Point(71, 232);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(118, 27);
@@ -309,7 +315,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label10.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label10.Location = new System.Drawing.Point(72, 116);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(120, 27);
@@ -320,7 +326,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label8.Location = new System.Drawing.Point(73, 174);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(119, 27);
@@ -331,7 +337,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label11.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label11.Location = new System.Drawing.Point(71, 290);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(74, 27);
@@ -341,10 +347,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(140, 29);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(195)))), ((int)(((byte)(223)))));
+            this.label7.Location = new System.Drawing.Point(158, 22);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(197, 37);
             this.label7.TabIndex = 10;
@@ -352,7 +358,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.linkShowPassWord);
             this.panel1.Controls.Add(this.LinkEditPass);
             this.panel1.Controls.Add(this.btn_Save);
@@ -372,10 +378,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(857, 0);
+            this.panel1.Location = new System.Drawing.Point(804, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(481, 736);
+            this.panel1.Size = new System.Drawing.Size(522, 681);
             this.panel1.TabIndex = 0;
             // 
             // linkShowPassWord
@@ -408,7 +413,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btn_Save.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_Save.IconColor = System.Drawing.Color.Black;
             this.btn_Save.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_Save.Location = new System.Drawing.Point(271, 597);
+            this.btn_Save.Location = new System.Drawing.Point(270, 565);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(165, 51);
             this.btn_Save.TabIndex = 11;
@@ -423,7 +428,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btn_Cancel.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_Cancel.IconColor = System.Drawing.SystemColors.Window;
             this.btn_Cancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_Cancel.Location = new System.Drawing.Point(77, 597);
+            this.btn_Cancel.Location = new System.Drawing.Point(76, 565);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(165, 51);
             this.btn_Cancel.TabIndex = 11;
@@ -438,9 +443,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txt_ECurrentPassword.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ECurrentPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_ECurrentPassword.Location = new System.Drawing.Point(76, 494);
-            this.txt_ECurrentPassword.Multiline = true;
             this.txt_ECurrentPassword.Name = "txt_ECurrentPassword";
-            this.txt_ECurrentPassword.Size = new System.Drawing.Size(373, 25);
+            this.txt_ECurrentPassword.Size = new System.Drawing.Size(373, 27);
             this.txt_ECurrentPassword.TabIndex = 2;
             this.txt_ECurrentPassword.UseSystemPasswordChar = true;
             // 
@@ -451,11 +455,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txt_EConfirmPassword.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_EConfirmPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_EConfirmPassword.Location = new System.Drawing.Point(76, 436);
-            this.txt_EConfirmPassword.Multiline = true;
             this.txt_EConfirmPassword.Name = "txt_EConfirmPassword";
-            this.txt_EConfirmPassword.Size = new System.Drawing.Size(373, 25);
+            this.txt_EConfirmPassword.Size = new System.Drawing.Size(373, 27);
             this.txt_EConfirmPassword.TabIndex = 2;
-            this.txt_EConfirmPassword.Text = "000000";
             this.txt_EConfirmPassword.UseSystemPasswordChar = true;
             // 
             // txt_EEmail
@@ -510,7 +512,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label14.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label14.Location = new System.Drawing.Point(71, 406);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(236, 27);
@@ -521,7 +523,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label13.Location = new System.Drawing.Point(71, 348);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(110, 27);
@@ -532,12 +534,53 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label12.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label12.Location = new System.Drawing.Point(71, 464);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(188, 27);
             this.label12.TabIndex = 1;
             this.label12.Text = "Current password:";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.panel3);
+            this.panel4.Location = new System.Drawing.Point(66, 64);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(721, 601);
+            this.panel4.TabIndex = 12;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(66, 682);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(721, 54);
+            this.panel5.TabIndex = 13;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(244)))));
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label15.Location = new System.Drawing.Point(59, 9);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(406, 38);
+            this.label15.TabIndex = 14;
+            this.label15.Text = "New User Profile | Account";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label16.Location = new System.Drawing.Point(463, 22);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(150, 22);
+            this.label16.TabIndex = 15;
+            this.label16.Text = "user account page";
             // 
             // Profile
             // 
@@ -545,7 +588,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1338, 736);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -562,6 +604,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -603,5 +647,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private System.Windows.Forms.LinkLabel linkEdit;
         private System.Windows.Forms.LinkLabel LinkEditPass;
         private System.Windows.Forms.LinkLabel linkShowPassWord;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
     }
 }

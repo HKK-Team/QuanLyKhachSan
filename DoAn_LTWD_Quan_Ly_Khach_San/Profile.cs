@@ -42,9 +42,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             txt_EFname.Text = UserCache.FirstName;
             txt_ELname.Text = UserCache.LastName;
             txt_EEmail.Text = UserCache.Email;
-            txt_EPasswordd.Text = "";
+            /*txt_EPasswordd.Text = "";
             txt_EConfirmPassword.Text = "";
-            txt_ECurrentPassword.Text = "";
+            txt_ECurrentPassword.Text = "";*/
         }
         private void initializePassEditControls()
         {
@@ -53,6 +53,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             txt_EPasswordd.Enabled = false;
             txt_EConfirmPassword.UseSystemPasswordChar = true;
             txt_EConfirmPassword.Enabled = false;
+            txt_ECurrentPassword.UseSystemPasswordChar = true;
+            
         }
         private void reset()
         {
@@ -98,12 +100,13 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (LinkEditPass.Text == "Edit")
-            {
+            {    
                 LinkEditPass.Text = "Cancel";
                 txt_EPasswordd.Enabled = true;
                 txt_EPasswordd.Text = "";
                 txt_EConfirmPassword.Enabled = true;
                 txt_EConfirmPassword.Text = "";
+
                 linkShowPassWord.Text = "show";
                 linkShowPassWord.Visible = true;
             }
@@ -134,19 +137,21 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
 
         private void linkShowPassWord_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if(linkShowPassWord.Text == "show")
+            if (linkShowPassWord.Text == "show")
             {
                 linkShowPassWord.Text = "hidden";
                 txt_EPasswordd.UseSystemPasswordChar = false;
                 txt_ECurrentPassword.UseSystemPasswordChar = false;
                 txt_EConfirmPassword.UseSystemPasswordChar = false;
+                
             }
-            else if(linkShowPassWord.Text == "hidden")
+            else if (linkShowPassWord.Text == "hidden")
             {
                 linkShowPassWord.Text = "show";
                 txt_EPasswordd.UseSystemPasswordChar = true;
                 txt_ECurrentPassword.UseSystemPasswordChar = true;
                 txt_EConfirmPassword.UseSystemPasswordChar = true;
+              
             }
 
 
