@@ -95,4 +95,3 @@ DELIMITER;
 call ql_khach_san.usp_tongten();
 select lastname from admin where
 
-select* from Phong where Tinhtrang = N'Còn Trống'
