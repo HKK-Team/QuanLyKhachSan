@@ -33,10 +33,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txtTaiKhoan = new System.Windows.Forms.TextBox();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblErrorMessage = new System.Windows.Forms.Label();
             this.iconPictureBox8 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox9 = new FontAwesome.Sharp.IconPictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -50,7 +50,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
@@ -63,8 +62,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btnDangNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnDangNhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangNhap.ForeColor = System.Drawing.Color.Black;
-            this.btnDangNhap.Location = new System.Drawing.Point(87, 353);
+            this.btnDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.btnDangNhap.Location = new System.Drawing.Point(85, 410);
             this.btnDangNhap.Margin = new System.Windows.Forms.Padding(5);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(238, 55);
@@ -87,6 +86,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txtTaiKhoan.TabIndex = 6;
             this.txtTaiKhoan.Text = "Username";
             this.txtTaiKhoan.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtTaiKhoan_MouseClick);
+            this.txtTaiKhoan.TextChanged += new System.EventHandler(this.txtTaiKhoan_TextChanged);
             // 
             // txtMatKhau
             // 
@@ -107,10 +107,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.panel2.Controls.Add(this.lblErrorMessage);
             this.panel2.Controls.Add(this.iconPictureBox8);
             this.panel2.Controls.Add(this.iconPictureBox7);
             this.panel2.Controls.Add(this.iconPictureBox6);
-            this.panel2.Controls.Add(this.iconPictureBox9);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel1);
@@ -128,6 +128,19 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(389, 827);
             this.panel2.TabIndex = 9;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // lblErrorMessage
+            // 
+            this.lblErrorMessage.AutoSize = true;
+            this.lblErrorMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.lblErrorMessage.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.lblErrorMessage.Location = new System.Drawing.Point(83, 342);
+            this.lblErrorMessage.MaximumSize = new System.Drawing.Size(280, 0);
+            this.lblErrorMessage.Name = "lblErrorMessage";
+            this.lblErrorMessage.Size = new System.Drawing.Size(0, 19);
+            this.lblErrorMessage.TabIndex = 20;
             // 
             // iconPictureBox8
             // 
@@ -178,21 +191,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconPictureBox6.TabIndex = 17;
             this.iconPictureBox6.TabStop = false;
             // 
-            // iconPictureBox9
-            // 
-            this.iconPictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconPictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
-            this.iconPictureBox9.ForeColor = System.Drawing.Color.Black;
-            this.iconPictureBox9.IconChar = FontAwesome.Sharp.IconChar.Teamspeak;
-            this.iconPictureBox9.IconColor = System.Drawing.Color.Black;
-            this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox9.IconSize = 67;
-            this.iconPictureBox9.Location = new System.Drawing.Point(0, 760);
-            this.iconPictureBox9.Name = "iconPictureBox9";
-            this.iconPictureBox9.Size = new System.Drawing.Size(68, 67);
-            this.iconPictureBox9.TabIndex = 16;
-            this.iconPictureBox9.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
@@ -221,9 +219,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // iconPictureBox2
             // 
             this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
-            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserCircle;
-            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserAstronaut;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox2.IconSize = 150;
             this.iconPictureBox2.Location = new System.Drawing.Point(125, 33);
@@ -238,10 +236,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(87, 445);
+            this.iconButton1.Location = new System.Drawing.Point(85, 488);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(238, 53);
@@ -255,9 +254,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconPictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.iconPictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconPictureBox5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
             this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
-            this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox5.IconSize = 50;
             this.iconPictureBox5.Location = new System.Drawing.Point(314, 777);
@@ -323,12 +322,12 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "DangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
@@ -355,7 +354,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private FontAwesome.Sharp.IconPictureBox iconPictureBox8;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox7;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox9;
+        private System.Windows.Forms.Label lblErrorMessage;
     }
 }
 

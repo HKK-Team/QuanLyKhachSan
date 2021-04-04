@@ -122,12 +122,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             adapter.Fill(table);
         }
 
-        private void thốngKêGiaoDịchToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ThongKeGiaoDich tkgd = new ThongKeGiaoDich();
-            tkgd.Show();
-        }
+  
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {

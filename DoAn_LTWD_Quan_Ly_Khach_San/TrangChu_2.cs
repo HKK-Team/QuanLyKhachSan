@@ -18,11 +18,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         MySqlCommand MySqlcommand;
         MySqlDataAdapter adapter = new MySqlDataAdapter();
         DataTable table = new DataTable();
-     
+
 
         public TrangChu_2()
         {
-            InitializeComponent();          
+            InitializeComponent();
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -40,6 +40,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             showKhachHang();
             showbill();
             showphongchuadat();
+            showtongtien();
+            showNV();
         }
         public void Showlb_Phong()
         {
@@ -62,7 +64,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         void showdata()
         {
             MySqlcommand = Connection.CreateCommand();
-            MySqlcommand.CommandText = "select* from Phong where tinhtrang = 'Còn Trống' " ;
+            MySqlcommand.CommandText = "select* from Phong where tinhtrang = 'Còn Trống' ";
             adapter.SelectCommand = MySqlcommand;
             table.Clear();
             adapter.Fill(table);
@@ -75,7 +77,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             Read_Data = mySqlCommand.ExecuteReader();
             while (Read_Data.Read())
             {
-                lbl_Khachhang.Text =  Read_Data[0].ToString() + " khách hàng";
+                lbl_Khachhang.Text = Read_Data[0].ToString() + " khách hàng";
             }
             Read_Data.Close();
         }
@@ -101,8 +103,28 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             }
             Read_Data.Close();
         }
-
-       
-        
+        public void showtongtien()
+        {
+            Mysql = "call ql_khach_san.usp_tongten()";
+            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
+            Read_Data = mySqlCommand.ExecuteReader();
+            while (Read_Data.Read())
+            {
+                lbl_Doanhthu.Text = "   "+ Read_Data[0].ToString() + " VND";
+            }
+            Read_Data.Close();
+        }
+        public void showNV()
+        {
+            Mysql = "select count(userid) from admin " ;
+            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
+            Read_Data = mySqlCommand.ExecuteReader();
+            while (Read_Data.Read())
+            {
+                lbl_NhanVien.Text = "Tổng số nhân viên: " + Read_Data[0].ToString();
+            }
+            Read_Data.Close();
+        }
+    
     }
 }

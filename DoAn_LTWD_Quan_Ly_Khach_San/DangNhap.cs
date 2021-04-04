@@ -8,21 +8,71 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using FontAwesome.Sharp;
+using Domain;
+using DataAccess;
 
 namespace DoAn_LTWD_Quan_Ly_Khach_San
 {
     public partial class DangNhap : Form
     {
+        private IconButton currentBtn;
+        private Panel pannel;
         public DangNhap()
         {
             InitializeComponent();
         }
-
+     
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            runQuery();
+            btnlogin_Click(sender, e);
         }
-        private void runQuery()
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            string tk = txtTaiKhoan.Text;
+            string mk = txtMatKhau.Text;
+            if (txtTaiKhoan.Text != "Username" && txtTaiKhoan.TextLength > 2)
+            {
+                if (txtMatKhau.Text != "Password")
+                {
+                    
+                    UserModel user = new UserModel();
+                    
+                    var validLogin = user.LoginUser(tk,mk);
+                    if (validLogin == true)
+                    {
+                        TrangChu mainMenu = new TrangChu();
+                        MessageBox.Show("Wecome " + UserCache.FirstName + ", " + UserCache.LastName);
+                        mainMenu.Show();
+                        mainMenu.FormClosed += Logout;
+                        this.Hide();
+                    }
+                    else
+                    {
+                        msgError("! Sai tài khoản hoặc mật khẩu\n      Please try again.");
+                        txtMatKhau.Text = "Password";
+                        txtMatKhau.UseSystemPasswordChar = true;
+                        txtMatKhau.Focus();
+                    }
+                }
+                else msgError("Please enter password.");
+            }
+            else msgError("Please enter username.");
+        }
+        private void msgError(string msg)
+        {
+            lblErrorMessage.Text = "    " + msg;
+            lblErrorMessage.Visible = true;
+        }
+        private void Logout(object sender, FormClosedEventArgs e)
+        {
+            txtMatKhau.Text = "Password";
+            txtMatKhau.UseSystemPasswordChar = true;
+            txtTaiKhoan.Text = "Username";
+            lblErrorMessage.Visible = false;
+            this.Show();
+        }
+        /*private void runQuery()
         {
             // kết nối với sever trong mysql
             string MySQLConnectionString = @"datasource = 127.0.0.1; port = 3306; username = root; password = 260601; database = ql_khach_san";
@@ -55,7 +105,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             {
                 MessageBox.Show("Lỗi kết nối!","Thông Báo!");
             }
-        }
+        }*/
 
 
         private void iconPictureBox5_Click(object sender, EventArgs e)
@@ -69,16 +119,20 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         }
         private void txtTaiKhoan_MouseClick(object sender, MouseEventArgs e)
         {
+
             txtTaiKhoan.Clear();
-            panel1.BackColor = Color.FromArgb(181, 255, 248);
-            iconPictureBox3.ForeColor = Color.FromArgb(181, 255, 248);
+            panel1.BackColor = Color.FromArgb(205, 198, 152);
+            iconPictureBox3.ForeColor = Color.FromArgb(205, 198, 152);
+            txtTaiKhoan.ForeColor = Color.FromArgb(205, 198, 152);
         }
 
         private void txtMatKhau_MouseClick(object sender, MouseEventArgs e)
         {
             txtMatKhau.Clear();
-            panel3.BackColor = Color.FromArgb(181, 255, 248);
-            iconPictureBox4.ForeColor = Color.FromArgb(181, 255, 248);
+            panel5.BackColor = Color.FromArgb(205, 198, 152);
+            iconPictureBox4.ForeColor = Color.FromArgb(205, 198, 152);
+            txtMatKhau.ForeColor = Color.FromArgb(205, 198, 152);
+
         }
 
   
@@ -86,6 +140,16 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         {
             txtTaiKhoan.Clear();
             txtMatKhau.Clear();
+        }
+
+        private void txtTaiKhoan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
