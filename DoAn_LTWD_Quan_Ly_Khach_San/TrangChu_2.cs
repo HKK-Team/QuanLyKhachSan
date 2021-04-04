@@ -38,7 +38,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             Showlb_Phong();
             ShowSoPhongDD();
             showKhachHang();
-            showbill();
+            ShowBill();
             showphongchuadat();
             showtongtien();
             showNV();
