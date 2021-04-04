@@ -108,7 +108,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void btnTinhTien_Click(object sender, EventArgs e)
         {
             Connection.Open();
-            Mysql = "Select khachhang.makh,ngayden,PHONG.MAPHONG,KHACHHANG.HOTEN,(curdate() - khachhang.ngayden), ((curdate() - khachhang.NGAYDEN) *phong.DONGIA) FROM PHONG Inner Join KHACHHANG ON PHONG.MAPHONG = KHACHHANG.MAPHONG Where(KHACHHANG.MAPHONG = N'" + cbMaPhong.Text + @"') and(KHACHHANG.HOTEN = N'" + txtHoTen.Text + @"')";
+            Mysql = "Select khachhang.makh,ngayden,PHONG.MAPHONG,KHACHHANG.HOTEN,(curdate() - khachhang.ngayden), ((curdate() - khachhang.NGAYDEN) * phong.DONGIA) FROM PHONG Inner Join KHACHHANG ON PHONG.MAPHONG = KHACHHANG.MAPHONG Where(KHACHHANG.MAPHONG = N'" + cbMaPhong.Text + @"') and(KHACHHANG.HOTEN = N'" + txtHoTen.Text + @"')";
             MySqlCommand mySqlCommand = new MySqlCommand(Mysql,Connection);
             Read_Data = mySqlCommand.ExecuteReader();
             // đọc dữ liệu từ data rồi đổ xuống cho các label để hiển thị ra màn hình thông tin của khách hàng cần thanh toán

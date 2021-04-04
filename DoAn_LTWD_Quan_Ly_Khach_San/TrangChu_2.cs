@@ -18,6 +18,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         MySqlCommand MySqlcommand;
         MySqlDataAdapter adapter = new MySqlDataAdapter();
         DataTable table = new DataTable();
+     
+
         public TrangChu_2()
         {
             InitializeComponent();          
@@ -35,7 +37,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             showdata();
             Showlb_Phong();
             ShowSoPhongDD();
-            ShowDoanhThu();
             ShowBill();
 
         }
@@ -47,7 +48,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             Read_Data = mySqlCommand.ExecuteReader();
             while (Read_Data.Read())
             {
-                lbl_Phong.Text = "   Còn " + Read_Data[0].ToString() + " phòng";
+                lbl_Phong.Text = "Còn " + Read_Data[0].ToString() + " phòng trống";
             }
             Read_Data.Close();
             Connection.Close();
@@ -55,55 +56,52 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         public void ShowSoPhongDD()
         {
             Connection.Open();
-            Mysql = "select count(MAPHONG) as soluongphong from phong where TINHTRANG = 'Đã Có Khách'";
-            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
-            Read_Data = mySqlCommand.ExecuteReader();
-            while (Read_Data.Read())
-            {
-                lbl_RoomStatus.Text = "Có " + Read_Data[0].ToString() + " phòng đã đặt";
-            }
-            Read_Data.Close();
-            Connection.Close();
-        }
-        public void ShowDoanhThu()
-        {
-            Connection.Open();
-            Mysql = "select sum(SOTIENDATHANHTOAN) as tongdoanhthu from thongkegiaodich";
-            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
-            Read_Data = mySqlCommand.ExecuteReader();
-            while (Read_Data.Read())
-            {
-                lbl_Doanhthu.Text = "DT  :  " + Read_Data[0].ToString() +"VNĐ";
-            }
-            Read_Data.Close();
-            Connection.Close();
-        }
-        public void ShowBill()
-        {
-            Connection.Open();
-            Mysql = "select count(MAGD) as TongBill from thongkegiaodich";
-            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
-            Read_Data = mySqlCommand.ExecuteReader();
-            while (Read_Data.Read())
-            {
-                lbl_ThanhToan.Text = "Có " + Read_Data[0].ToString() + " bill đã thanh toán";
-            }
-            Read_Data.Close();
-            Connection.Close();
+            showdata();
         }
         void showdata()
         {
             MySqlcommand = Connection.CreateCommand();
-            MySqlcommand.CommandText = "select* from Phong " + "where Tinhtrang = N'Còn Trống'";
+            MySqlcommand.CommandText = "select* from Phong where tinhtrang = 'Còn Trống' " ;
             adapter.SelectCommand = MySqlcommand;
             table.Clear();
             adapter.Fill(table);
             dgTC.DataSource = table;
         }
-
-        private void lbl_Phong_Click(object sender, EventArgs e)
+        void showKhachHang()
         {
-
+            Mysql = "select count(MaKh) from khachhang ";
+            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
+            Read_Data = mySqlCommand.ExecuteReader();
+            while (Read_Data.Read())
+            {
+                lbl_Khachhang.Text =  Read_Data[0].ToString() + " khách hàng";
+            }
+            Read_Data.Close();
         }
+        public void ShowBill()
+        {
+            Mysql = "select count(MAGD) from thongkegiaodich";
+            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
+            Read_Data = mySqlCommand.ExecuteReader();
+            while (Read_Data.Read())
+            {
+                lbl_ThanhToan.Text = Read_Data[0].ToString() + " hóa đơn";
+            }
+            Read_Data.Close();
+        }
+        void showphongchuadat()
+        {
+            Mysql = "select count(MAPHONG) from Phong " + "where Tinhtrang = 'Đã có khách'";
+            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
+            Read_Data = mySqlCommand.ExecuteReader();
+            while (Read_Data.Read())
+            {
+                lbl_RoomStatus.Text = Read_Data[0].ToString() + " phòng đã có khách ";
+            }
+            Read_Data.Close();
+        }
+
+       
+        
     }
 }
