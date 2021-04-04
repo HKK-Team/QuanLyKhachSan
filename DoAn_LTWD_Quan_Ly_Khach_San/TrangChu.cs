@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using FontAwesome.Sharp;
+using DataAccess;
 
 namespace DoAn_LTWD_Quan_Ly_Khach_San
 {
@@ -24,6 +25,12 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             leftBorderBtn.Size = new Size(7, 60);
             pn_right.Controls.Add(leftBorderBtn);
 
+        }
+        private void loadUserData()
+        {
+            lbl_name.Text = UserCache.LastName +" , "+ UserCache.FirstName;
+            lbl_email.Text = UserCache.Email;
+            lbl_position.Text = UserCache.Position;
         }
         private struct RGBColors
         {
@@ -156,6 +163,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void TrangChu_Load(object sender, EventArgs e)
         {
             show(new TrangChu_2());
+            loadUserData();
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -221,6 +229,19 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         {
             ActivateButton(sender, RGBColors.color0);
             show(new TrangChu_2());
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            DialogResult a = MessageBox.Show("Bạn có thực sự muốn Log out!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (a == DialogResult.Yes)
+            {
+                DangNhap b = new DangNhap();
+                b.Hide();
+                b.Show();
+                this.Close();
+            }
+           
         }
     }
 }

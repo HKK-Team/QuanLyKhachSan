@@ -126,7 +126,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.dgShowKhachHang.RowTemplate.Height = 35;
             this.dgShowKhachHang.Size = new System.Drawing.Size(1163, 180);
             this.dgShowKhachHang.TabIndex = 7;
-            this.dgShowKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgShowKhachHang_CellClick);
+            this.dgShowKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgShowKhachHang_CellClick_1);
             // 
             // groupBox2
             // 

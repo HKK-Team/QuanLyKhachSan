@@ -31,6 +31,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         {
             this.components = new System.ComponentModel.Container();
             this.pn_right = new System.Windows.Forms.Panel();
+            this.lbl_email = new System.Windows.Forms.Label();
+            this.lbl_name = new System.Windows.Forms.Label();
+            this.lbl_position = new System.Windows.Forms.Label();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -56,7 +60,10 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.pn_center = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.pn_right.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.pn_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -64,11 +71,13 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             ((System.ComponentModel.ISupportInitialize)(this.btn_mixinize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_restore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_close)).BeginInit();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_right
             // 
             this.pn_right.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.pn_right.Controls.Add(this.panel8);
             this.pn_right.Controls.Add(this.iconButton2);
             this.pn_right.Controls.Add(this.iconButton4);
             this.pn_right.Controls.Add(this.panel7);
@@ -89,6 +98,54 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.pn_right.Name = "pn_right";
             this.pn_right.Size = new System.Drawing.Size(280, 787);
             this.pn_right.TabIndex = 2;
+            // 
+            // lbl_email
+            // 
+            this.lbl_email.AutoSize = true;
+            this.lbl_email.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.lbl_email.Location = new System.Drawing.Point(79, 96);
+            this.lbl_email.Name = "lbl_email";
+            this.lbl_email.Size = new System.Drawing.Size(44, 19);
+            this.lbl_email.TabIndex = 22;
+            this.lbl_email.Text = "sssss";
+            // 
+            // lbl_name
+            // 
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.lbl_name.Location = new System.Drawing.Point(79, 68);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(44, 19);
+            this.lbl_name.TabIndex = 22;
+            this.lbl_name.Text = "sssss";
+            // 
+            // lbl_position
+            // 
+            this.lbl_position.AutoSize = true;
+            this.lbl_position.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_position.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.lbl_position.Location = new System.Drawing.Point(79, 38);
+            this.lbl_position.Name = "lbl_position";
+            this.lbl_position.Size = new System.Drawing.Size(44, 19);
+            this.lbl_position.TabIndex = 22;
+            this.lbl_position.Text = "sssss";
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserAstronaut;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 83;
+            this.iconPictureBox2.Location = new System.Drawing.Point(-1, -1);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(83, 171);
+            this.iconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox2.TabIndex = 21;
+            this.iconPictureBox2.TabStop = false;
             // 
             // iconButton2
             // 
@@ -240,7 +297,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(277, 60);
             this.iconButton5.TabIndex = 13;
-            this.iconButton5.Text = "            Revenue statistics";
+            this.iconButton5.Text = "   Revenue statistics";
             this.iconButton5.UseVisualStyleBackColor = true;
             this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
@@ -453,6 +510,40 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.timer2.Interval = 15;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // panel8
+            // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.iconButton7);
+            this.panel8.Controls.Add(this.iconPictureBox2);
+            this.panel8.Controls.Add(this.lbl_position);
+            this.panel8.Controls.Add(this.lbl_email);
+            this.panel8.Controls.Add(this.lbl_name);
+            this.panel8.Location = new System.Drawing.Point(3, 605);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(274, 179);
+            this.panel8.TabIndex = 23;
+            // 
+            // iconButton7
+            // 
+            this.iconButton7.FlatAppearance.BorderSize = 0;
+            this.iconButton7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.iconButton7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(198)))), ((int)(((byte)(152)))));
+            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton7.IconSize = 40;
+            this.iconButton7.Location = new System.Drawing.Point(143, 138);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Size = new System.Drawing.Size(133, 40);
+            this.iconButton7.TabIndex = 23;
+            this.iconButton7.Text = "Log out";
+            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.iconButton7.UseVisualStyleBackColor = true;
+            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
+            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -469,6 +560,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.Text = "TrangChu";
             this.Load += new System.EventHandler(this.TrangChu_Load);
             this.pn_right.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.pn_top.ResumeLayout(false);
             this.pn_top.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
@@ -477,6 +569,8 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             ((System.ComponentModel.ISupportInitialize)(this.btn_mixinize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_restore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_close)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -508,5 +602,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private System.Windows.Forms.Panel panel6;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Label lblTitleChildForm;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private System.Windows.Forms.Label lbl_position;
+        private System.Windows.Forms.Label lbl_email;
+        private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.Panel panel8;
+        private FontAwesome.Sharp.IconButton iconButton7;
     }
 }

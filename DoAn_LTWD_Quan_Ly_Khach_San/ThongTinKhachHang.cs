@@ -59,21 +59,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             dgShowThongTin.DataSource = table;
         }
 
-        private void dgShowThongTin_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // mạc định cho textbox MaKh chỉ được đọc chứ không được xóa hoặc sửa vì nó là khóa chính nên không có thể đụng vô đc
-            txtMaKH.ReadOnly = true;
-            int ans;
-            // trỏ đến thành phần giá trị của thuộc tính trong datagridview để hiển thị lên phần điền thông tin khách hàng
-            ans = dgShowThongTin.CurrentRow.Index;
-            txtMaKH.Text = dgShowThongTin.Rows[ans].Cells[0].Value.ToString();
-            txtHoTen.Text = dgShowThongTin.Rows[ans].Cells[1].Value.ToString();
-            txtCMND.Text = dgShowThongTin.Rows[ans].Cells[2].Value.ToString();
-            dateNgayDen.Text = dgShowThongTin.Rows[ans].Cells[3].Value.ToString();
-            cbMaPhong.Text = dgShowThongTin.Rows[ans].Cells[4].Value.ToString();
-            cbTinhTrangThanhToan.Text = dgShowThongTin.Rows[ans].Cells[5].Value.ToString();
-
-        }
+ 
         private void btnThem_Click(object sender, EventArgs e)
         {
             // khởi tạo một giá trị mới để gán dữ liệu
@@ -99,19 +85,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             MySqlcommand.ExecuteNonQuery();
             ShowData();
         }
-        private void thanhToánToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Payment thanhtoan = new Payment();
-            thanhtoan.Show();
-        }
-
-        private void tìnhTrạngPhòngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ThongTinPhong Phong= new ThongTinPhong();
-            Phong.Show();
-        }
+   
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
@@ -124,25 +98,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
 
   
 
-        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DialogResult a = MessageBox.Show("Bạn có thực sự muốn thoát chương trình hay không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (a == DialogResult.Yes)
-            {
-                this.Close();
-                Application.Exit();
-            }
-        }
-
-        private void thoátToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            DialogResult a = MessageBox.Show("Bạn có thực sự muốn thoát chương trình hay không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (a == DialogResult.Yes)
-            {
-                this.Close();
-                Application.Exit();
-            }
-        }
+    
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -152,6 +108,21 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void iconPictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgShowThongTin_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            // mạc định cho textbox MaKh chỉ được đọc chứ không được xóa hoặc sửa vì nó là khóa chính nên không có thể đụng vô đc
+            txtMaKH.ReadOnly = true;
+            int ans;
+            // trỏ đến thành phần giá trị của thuộc tính trong datagridview để hiển thị lên phần điền thông tin khách hàng
+            ans = dgShowThongTin.CurrentRow.Index;
+            txtMaKH.Text = dgShowThongTin.Rows[ans].Cells[0].Value.ToString();
+            txtHoTen.Text = dgShowThongTin.Rows[ans].Cells[1].Value.ToString();
+            txtCMND.Text = dgShowThongTin.Rows[ans].Cells[2].Value.ToString();
+            dateNgayDen.Text = dgShowThongTin.Rows[ans].Cells[3].Value.ToString();
+            cbMaPhong.Text = dgShowThongTin.Rows[ans].Cells[4].Value.ToString();
+            cbTinhTrangThanhToan.Text = dgShowThongTin.Rows[ans].Cells[5].Value.ToString();
         }
     }
 }
