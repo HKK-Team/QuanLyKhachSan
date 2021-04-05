@@ -26,21 +26,27 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         int s = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
-
-            s += 5;
-            progressBar1.Value = s;
-            if(s == 150)
+           
+            if (this.Opacity < 1) this.Opacity += 0.05;
             {
-                s = 0;
+                progressBar1.Value += 3;              
+            }
+            if (progressBar1.Value == 102)
+            {
                 timer1.Stop();
                 TrangChu a = new TrangChu();
                 a.Hide();
                 a.Show();
-            }    
+            }
         }
         public void loadDataUser()
         {
             lbl_Lname.Text = UserCache.LastName +" , " + UserCache.FirstName;
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

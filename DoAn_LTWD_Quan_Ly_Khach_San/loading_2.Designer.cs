@@ -53,10 +53,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.progressBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.progressBar1.ForeColor = System.Drawing.Color.Red;
-            this.progressBar1.Location = new System.Drawing.Point(-2, 369);
+            this.progressBar1.Location = new System.Drawing.Point(-2, 381);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(721, 40);
+            this.progressBar1.Size = new System.Drawing.Size(721, 28);
             this.progressBar1.Step = 5;
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 2;
             // 
             // timer1

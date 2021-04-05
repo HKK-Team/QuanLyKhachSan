@@ -121,6 +121,15 @@ end if;
 END;
 DELIMITER;
 call ql_khach_san.usp_tongten();
-select lastname from admin where txt
 
-update admin set LoginName=@userName, Password=@pass, FirstName=@name, LastName=@lastName, Email=@mail where UserID=@id
+/* TK thang , Nam*/
+select month(ngaydi) as "Tháng",sum(sotiendathanhtoan) as "Tổng Tiền GD Trong Tháng" from thongkegiaodich
+group by month(ngaydi)
+
+select year(ngaydi) as "Năm",sum(sotiendathanhtoan) as "Tổng Tiền GD Trong Năm" from thongkegiaodich
+group by year(ngaydi)
+
+
+
+
+
