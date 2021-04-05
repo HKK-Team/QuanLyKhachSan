@@ -52,7 +52,7 @@ namespace DataAccess
                 using (var command = new MySqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "update Users set LoginName=@userName, Password=@pass, FirstName=@name, LastName=@lastName, Email=@mail where UserID=@id";
+                    command.CommandText = "update admin set LoginName=@userName, Password=@pass, FirstName=@name, LastName=@lastName, Email=@mail where UserID=@id";
                     command.Parameters.AddWithValue("@userName", userName);
                     command.Parameters.AddWithValue("@pass", password);
                     command.Parameters.AddWithValue("@name", name);

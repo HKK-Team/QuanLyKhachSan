@@ -61,36 +61,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             loadUserData();
             initializePassEditControls();
         }
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            if (txt_EPasswordd.Text.Length >= 5)
-            {
-                if (txt_EPasswordd.Text == txt_EConfirmPassword.Text)
-                {
-                    if (txt_ECurrentPassword.Text == UserCache.Password)
-                    {
-                        var userModel = new UserModel(
-                            idUser: UserCache.IdUser,
-                            loginName: txt_User.Text,
-                            password: txt_EPasswordd.Text,
-                            firstName: txt_Fname.Text,
-                            lastName: txt_Lname.Text,
-                            position: null,
-                            email: txt_Email.Text);
-                        var result = userModel.editUserProfile();
-                        MessageBox.Show(result);
-                        reset();
-                        panel1.Visible = false;
-                    }
-                    else
-                        MessageBox.Show("Icorrect current password, try again");
-                }
-                else
-                    MessageBox.Show("The password do not match, try again");
-            }
-            else
-                MessageBox.Show("The password must have a minimum of 5 characters");
-        }
 
         private void linkEdit_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -143,7 +113,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
                 txt_EPasswordd.UseSystemPasswordChar = false;
                 txt_ECurrentPassword.UseSystemPasswordChar = false;
                 txt_EConfirmPassword.UseSystemPasswordChar = false;
-                
+
             }
             else if (linkShowPassWord.Text == "hidden")
             {
@@ -151,10 +121,38 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
                 txt_EPasswordd.UseSystemPasswordChar = true;
                 txt_ECurrentPassword.UseSystemPasswordChar = true;
                 txt_EConfirmPassword.UseSystemPasswordChar = true;
-              
+
             }
-
-
+        }
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            if (txt_EPasswordd.Text.Length >= 5)
+            {
+                if (txt_EPasswordd.Text == txt_EConfirmPassword.Text)
+                {
+                    if (txt_ECurrentPassword.Text == UserCache.Password)
+                    {
+                        var userModel = new UserModel(
+                            idUser: UserCache.IdUser,
+                            loginName: txt_User.Text,
+                            password: txt_EPasswordd.Text,
+                            firstName: txt_Fname.Text,
+                            lastName: txt_Lname.Text,
+                            position: null,
+                            email: txt_Email.Text);
+                        var result = userModel.editUserProfile();
+                        MessageBox.Show(result);
+                        reset();
+                        panel1.Visible = false;
+                    }
+                    else
+                        MessageBox.Show("Icorrect current password, try again");
+                }
+                else
+                    MessageBox.Show("The password do not match, try again");
+            }
+            else
+                MessageBox.Show("The password must have a minimum of 5 characters");
         }
     }
 }

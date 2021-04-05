@@ -39,10 +39,12 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
                     var validLogin = user.LoginUser(tk,mk);
                     if (validLogin == true)
                     {
-                        TrangChu mainMenu = new TrangChu();
-                        MessageBox.Show("Wecome " + UserCache.FirstName + ", " + UserCache.LastName);
-                        mainMenu.Show();
-                        mainMenu.FormClosed += Logout;
+
+                        Wecome a = new Wecome();
+                        a.Hide();
+                        a.Show();
+                        TrangChu b = new TrangChu();
+                        b.FormClosed += Logout;
                         this.Hide();
                     }
                     else

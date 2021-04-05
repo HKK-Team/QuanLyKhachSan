@@ -3,7 +3,7 @@ create table KHACHHANG
 (
 	MAKH CHAR(4) PRIMARY KEY,
 	HOTEN NVARCHAR(30),
-	SOCMND CHAR(9) unique,
+	SOCMND CHAR(9) unique MAKH,
 	NGAYDEN DATE,
 	MAPHONG CHAR(4),
 	FOREIGN KEY (MAPHONG) REFERENCES PHONG(MAPHONG),
@@ -15,6 +15,17 @@ CREATE TABLE PHONG
 	SOGIUONG INT,
 	DONGIA INT,
 	TINHTRANG NVARCHAR(12)
+);
+create table THONGKEGIAODICH
+(
+	MAGD INT AUTO_INCREMENT primary KEY,
+    MAKH CHAR(4),
+    foreign key (MAKH) references KHACHHANG(MAKH),
+    MAPHONG CHAR(4),
+    foreign key (MAPHONG) references PHONG(MAPHONG),
+    NGAYDEN datetime,
+    NGAYDI date,
+    SOTIENDATHANHTOAN int
 );
 create table Admin
 (
@@ -40,7 +51,7 @@ INSERT INTO PHONG(MAPHONG,SOGIUONG,DONGIA,TINHTRANG) VALUES('P15',5,650000,'Còn
 update phong set tinhtrang = 'Còn Trống' where maphong = 'P15';
 insert into admin(taikhoan,matkhau) values('admin26062001@gmail.com','admin2001');	
 select * from admin;
-Select khachhang.makh,ngayden,PHONG.MAPHONG,KHACHHANG.HOTEN, curdate() - khachhang.ngayden as "Ngay ở",((curdate() - khachhang.NGAYDEN) *phong.DONGIA) as lbtongtien
+Select PHONG.MAPHONG,KHACHHANG.HOTEN, curdate() - khachhang.ngayden as "Ngay ở",((curdate() - khachhang.NGAYDEN) *phong.DONGIA) as lbtongtien
 FROM PHONG Inner Join KHACHHANG
 ON PHONG.MAPHONG = KHACHHANG.MAPHONG
 Where KHACHHANG.MAPHONG = phong.maphong;
@@ -70,12 +81,30 @@ ALTER TABLE admin CHANGE MatKhau Password nvarchar(100);
 
 UPDATE admin 
 SET 
-	Firstname = 'Vu',
-    lastname = 'Quoc Khanh',
+	Firstname = N'Vũ',
+    lastname = N'Quốc Khánh',
     Position ='Staff',
     email = '0982483015kk@gmail.com'
 WHERE
     UserId = 3;
+    
+UPDATE admin 
+SET 
+	Firstname = N'Đoàn',
+    lastname = N'Minh Khánh',
+    Position ='Staff',
+    email = 'khanhdoan693@gmail.com'
+WHERE
+    UserId = 2;
+    
+UPDATE admin 
+SET 
+	Firstname = N'Huỳnh',
+    lastname = N'Đức Huy',
+    Position ='Staff',
+    email = 'huynhduchuy2001@gmail.com'
+WHERE
+    UserId = 1;
     
 /* chuan hoa tien */
 DELIMITER $$
@@ -83,15 +112,15 @@ CREATE PROCEDURE  usp_tongten ()
 BEGIN
 set @a  = (select sum(SOTIENDATHANHTOAN) from thongkegiaodich);
 set @b = (select length(@a));
-set @c = (select left(@a, 3));
-IF  (select @b = 6 ) then select concat((select left(@a, 3)),' ','K');
-elseif  (select @b = 7)  then select concat((select left(@a, 1)),' ','Tr');
-elseif (select @b = 8 ) then select concat((select left(@a, 2)),' ','Tr');
-elseif (select @b = 9) then select concat((select left(@a, 3)),' ','Tr');
-elseif (select @b = 10 ) then select concat((select left(@a, 1)),' ','Tỉ');
+IF  (select @b = 6 ) then select concat((select left(@a, 3)),',',(select SUBSTRING((select @a),4, 1)),' ','K');
+elseif  (select @b = 7)  then select concat((select left(@a, 1)),',',(select SUBSTRING((select @a),4, 1)),' ','Tr');
+elseif (select @b = 8 ) then select concat((select left(@a, 2)),',',(select SUBSTRING((select @a),4, 1)),' ','Tr');
+elseif (select @b = 9) then select concat((select left(@a, 3)),',',(select SUBSTRING((select @a),4, 1)),' ','Tr');
+elseif (select @b = 10 ) then select concat((select left(@a, 1)),',',(select SUBSTRING((select @a),4, 1)),' ','Tỉ');
 end if;
 END;
 DELIMITER;
 call ql_khach_san.usp_tongten();
-select lastname from admin where
+select lastname from admin where txt
 
+update admin set LoginName=@userName, Password=@pass, FirstName=@name, LastName=@lastName, Email=@mail where UserID=@id

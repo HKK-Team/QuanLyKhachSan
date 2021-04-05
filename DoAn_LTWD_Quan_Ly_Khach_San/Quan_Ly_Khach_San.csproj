@@ -126,6 +126,12 @@
     <Compile Include="TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Wecome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wecome.Designer.cs">
+      <DependentUpon>Wecome.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +174,9 @@
     </Compile>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wecome.resx">
+      <DependentUpon>Wecome.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DangNhap.datasource" />

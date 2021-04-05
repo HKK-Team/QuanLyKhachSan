@@ -241,7 +241,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
                 b.Show();
                 this.Close();
             }
-           
         }
+     
     }
 }
