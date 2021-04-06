@@ -23,7 +23,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         {
             timer1.Start();
         }
-        int s = 0;
+      
         private void timer1_Tick(object sender, EventArgs e)
         {
            
@@ -37,6 +37,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
                 TrangChu a = new TrangChu();
                 a.Hide();
                 a.Show();
+                this.Close();
             }
         }
         public void loadDataUser()

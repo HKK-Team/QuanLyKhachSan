@@ -129,7 +129,14 @@ group by month(ngaydi)
 select year(ngaydi) as "Năm",sum(sotiendathanhtoan) as "Tổng Tiền GD Trong Năm" from thongkegiaodich
 group by year(ngaydi)
 
-
-
+CREATE TABLE ThongKeDoanThuNam
+(
+	NGAYDI date REFERENCES THONGKEGIAODICH(NGAYDI),
+	DoanhThuNam decimal(15,3)
+);
+ALTER TABLE ThongKeDoanThuNam ADD CONSTRAINT fk_4 FOREIGN KEY (NGAYDI) REFERENCES THONGKEGIAODICH(NGAYDI);
+ALTER TABLE THONGKEGIAODICH ADD CONSTRAINT fk_3 FOREIGN KEY (NGAYDI) REFERENCES KHACHHANG(NGAYDI);
+ALTER TABLE KHACHHANG
+DROP COLUMN NGAYDI
 
 
