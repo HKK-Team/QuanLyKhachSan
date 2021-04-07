@@ -3,7 +3,7 @@ create table KHACHHANG
 (
 	MAKH CHAR(4) PRIMARY KEY,
 	HOTEN NVARCHAR(30),
-	SOCMND CHAR(9) unique MAKH,
+	SOCMND CHAR(9) unique,
 	NGAYDEN DATE,
 	MAPHONG CHAR(4),
 	FOREIGN KEY (MAPHONG) REFERENCES PHONG(MAPHONG),
@@ -51,7 +51,7 @@ INSERT INTO PHONG(MAPHONG,SOGIUONG,DONGIA,TINHTRANG) VALUES('P15',5,650000,'Còn
 update phong set tinhtrang = 'Còn Trống' where maphong = 'P15';
 insert into admin(taikhoan,matkhau) values('admin26062001@gmail.com','admin2001');	
 select * from admin;
-Select PHONG.MAPHONG,KHACHHANG.HOTEN, curdate() - khachhang.ngayden as "Ngay ở",((curdate() - khachhang.NGAYDEN) *phong.DONGIA) as lbtongtien
+Select khachhang.makh,ngayden,PHONG.MAPHONG,KHACHHANG.HOTEN, datediff(curdate() , khachhang.ngayden) as "Ngay_o",datediff(curdate(),khachhang.NGAYDEN) *phong.DONGIA as lbtongtien
 FROM PHONG Inner Join KHACHHANG
 ON PHONG.MAPHONG = KHACHHANG.MAPHONG
 Where KHACHHANG.MAPHONG = phong.maphong;
@@ -123,12 +123,15 @@ DELIMITER;
 call ql_khach_san.usp_tongten();
 
 /* TK thang , Nam*/
-select month(ngaydi) as "Tháng",sum(sotiendathanhtoan) as "Tổng Tiền GD Trong Tháng" from thongkegiaodich
+select month(ngaydi) as "Thang",sum(sotiendathanhtoan) as "Thang" from thongkegiaodich 
 group by month(ngaydi)
+order by month(ngaydi);
 
-select year(ngaydi) as "Năm",sum(sotiendathanhtoan) as "Tổng Tiền GD Trong Năm" from thongkegiaodich
+select year(ngaydi) as "Nam",sum(sotiendathanhtoan) as "Tong_DT_Nam" from thongkegiaodich
 group by year(ngaydi)
-
+order by year(ngaydi);
+create View ShowDT AS select month(ngaydi) as "Thang",sum(sotiendathanhtoan) as "Tong_DT_Thang" from thongkegiaodich
+group by month(ngaydi);
 CREATE TABLE ThongKeDoanThuNam
 (
 	NGAYDI date REFERENCES THONGKEGIAODICH(NGAYDI),

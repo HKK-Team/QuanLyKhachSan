@@ -81,7 +81,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void btnSua_Click(object sender, EventArgs e)
         {
             MySqlcommand = Connection.CreateCommand();
-            MySqlcommand.CommandText = "update khachhang set hoten = '" + txtHoTen.Text + "',socmnd = '" + txtCMND.Text + "', ngayden =  '" + dateNgayDen.Text + "', maphong = '" + cbMaPhong.Text + "',tinhtrangthanhtoan = '" +cbTinhTrangThanhToan.Text + "' where makh = '" + txtMaKH.Text + "'";
+            MySqlcommand.CommandText = "update khachhang set hoten = '" + txtHoTen.Text + "',socmnd = '" + txtCMND.Text + "', ngayden =  '" + dateNgayDen.Text + "', maphong = '" + cbMaPhong.Text + "',tinhtrangtt = '" +cbTinhTrangThanhToan.Text + "' where makh = '" + txtMaKH.Text + "'";
             MySqlcommand.ExecuteNonQuery();
             ShowData();
         }

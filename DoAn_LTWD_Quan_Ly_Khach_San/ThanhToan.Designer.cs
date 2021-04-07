@@ -215,7 +215,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThanhToan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThanhToan.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnThanhToan.Location = new System.Drawing.Point(754, 129);
+            this.btnThanhToan.Location = new System.Drawing.Point(808, 121);
             this.btnThanhToan.Margin = new System.Windows.Forms.Padding(5);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(219, 42);
@@ -230,7 +230,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btnTinhTien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTinhTien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTinhTien.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnTinhTien.Location = new System.Drawing.Point(754, 71);
+            this.btnTinhTien.Location = new System.Drawing.Point(809, 62);
             this.btnTinhTien.Margin = new System.Windows.Forms.Padding(5);
             this.btnTinhTien.Name = "btnTinhTien";
             this.btnTinhTien.Size = new System.Drawing.Size(218, 42);
@@ -343,7 +343,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btnTimKiemTheoHoTen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiemTheoHoTen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiemTheoHoTen.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnTimKiemTheoHoTen.Location = new System.Drawing.Point(753, 106);
+            this.btnTimKiemTheoHoTen.Location = new System.Drawing.Point(809, 107);
             this.btnTimKiemTheoHoTen.Margin = new System.Windows.Forms.Padding(5);
             this.btnTimKiemTheoHoTen.Name = "btnTimKiemTheoHoTen";
             this.btnTimKiemTheoHoTen.Size = new System.Drawing.Size(219, 42);
@@ -358,7 +358,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btnTimKiemTheoMaPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiemTheoMaPhong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiemTheoMaPhong.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnTimKiemTheoMaPhong.Location = new System.Drawing.Point(754, 49);
+            this.btnTimKiemTheoMaPhong.Location = new System.Drawing.Point(809, 47);
             this.btnTimKiemTheoMaPhong.Margin = new System.Windows.Forms.Padding(5);
             this.btnTimKiemTheoMaPhong.Name = "btnTimKiemTheoMaPhong";
             this.btnTimKiemTheoMaPhong.Size = new System.Drawing.Size(219, 42);
