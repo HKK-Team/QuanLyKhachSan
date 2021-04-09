@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "Data Access\D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{4B1EE780-E0E7-4C42-9E02-5013E39856DE}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{B97BA171-1462-4EA7-B375-664E19BA2118}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{F66929C3-61D9-4D02-8C1B-27B9AAB0F36E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,8 +29,8 @@ Global
 		{4B1EE780-E0E7-4C42-9E02-5013E39856DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B1EE780-E0E7-4C42-9E02-5013E39856DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B1EE780-E0E7-4C42-9E02-5013E39856DE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B97BA171-1462-4EA7-B375-664E19BA2118}.Debug|Any CPU.ActiveCfg = Debug
-		{B97BA171-1462-4EA7-B375-664E19BA2118}.Release|Any CPU.ActiveCfg = Release
+		{F66929C3-61D9-4D02-8C1B-27B9AAB0F36E}.Debug|Any CPU.ActiveCfg = Debug
+		{F66929C3-61D9-4D02-8C1B-27B9AAB0F36E}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

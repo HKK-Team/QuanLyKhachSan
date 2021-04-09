@@ -351,11 +351,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Enabled = false;
             this.panel1.Location = new System.Drawing.Point(804, 64);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(522, 681);
             this.panel1.TabIndex = 0;
+            this.panel1.Visible = false;
             // 
             // linkShowPassWord
             // 
