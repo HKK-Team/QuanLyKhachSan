@@ -71,11 +71,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(3, 526);
+            this.label3.Location = new System.Drawing.Point(-1, 529);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(319, 38);
+            this.label3.Size = new System.Drawing.Size(262, 34);
             this.label3.TabIndex = 0;
             this.label3.Text = "Development Team :";
             this.label3.Click += new System.EventHandler(this.label1_Click);
@@ -83,11 +83,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(42, 579);
+            this.label4.Location = new System.Drawing.Point(24, 574);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(242, 32);
+            this.label4.Size = new System.Drawing.Size(191, 27);
             this.label4.TabIndex = 0;
             this.label4.Text = "Đoàn Minh Khánh";
             this.label4.Click += new System.EventHandler(this.label1_Click);
@@ -95,11 +95,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(42, 666);
+            this.label5.Location = new System.Drawing.Point(24, 661);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(215, 32);
+            this.label5.Size = new System.Drawing.Size(168, 27);
             this.label5.TabIndex = 0;
             this.label5.Text = "Vũ Quốc Khánh";
             this.label5.Click += new System.EventHandler(this.label1_Click);
@@ -107,11 +107,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label6.Location = new System.Drawing.Point(42, 624);
+            this.label6.Location = new System.Drawing.Point(24, 619);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(211, 32);
+            this.label6.Size = new System.Drawing.Size(171, 27);
             this.label6.TabIndex = 0;
             this.label6.Text = "Huỳnh Đức Huy";
             this.label6.Click += new System.EventHandler(this.label1_Click);
@@ -128,7 +128,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.circularProgressBar1.InnerWidth = -1;
             this.circularProgressBar1.Location = new System.Drawing.Point(441, 155);
             this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
-            this.circularProgressBar1.Maximum = 102;
             this.circularProgressBar1.Name = "circularProgressBar1";
             this.circularProgressBar1.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(41)))));
             this.circularProgressBar1.OuterMargin = -25;
@@ -149,6 +148,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.circularProgressBar1.Text = "0";
             this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
             this.circularProgressBar1.Value = 68;
+            this.circularProgressBar1.Click += new System.EventHandler(this.circularProgressBar1_Click);
             // 
             // timer1
             // 

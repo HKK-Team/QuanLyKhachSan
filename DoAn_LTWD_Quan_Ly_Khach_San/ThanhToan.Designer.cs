@@ -222,7 +222,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btnThanhToan.TabIndex = 6;
             this.btnThanhToan.Text = "Thanh Toán";
             this.btnThanhToan.UseVisualStyleBackColor = true;
-            this.btnThanhToan.Click += new System.EventHandler(this.btnThoat_Click);
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // btnTinhTien
             // 

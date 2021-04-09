@@ -102,8 +102,9 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
   
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            txtTaiKhoan.Clear();
-            txtMatKhau.Clear();
+            var recoverPassword = new RecoverPassword();
+            this.Hide();
+            recoverPassword.ShowDialog();
         }
 
         private void txtTaiKhoan_TextChanged(object sender, EventArgs e)
@@ -114,6 +115,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void iconPictureBox6_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

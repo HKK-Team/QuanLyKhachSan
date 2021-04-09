@@ -36,16 +36,16 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbTinhTrangThanhToan = new System.Windows.Forms.ComboBox();
+            this.cbTinhTrangThanhToan = new System.Windows.Forms.TextBox();
+            this.lbl_MaKh = new System.Windows.Forms.Label();
             this.cbMaPhong = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.dateNgayDen = new System.Windows.Forms.DateTimePicker();
             this.txtCMND = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.txtMaKH = new System.Windows.Forms.TextBox();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -78,15 +78,15 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.cbTinhTrangThanhToan);
+            this.groupBox1.Controls.Add(this.lbl_MaKh);
             this.groupBox1.Controls.Add(this.cbMaPhong);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.btnLuu);
             this.groupBox1.Controls.Add(this.dateNgayDen);
             this.groupBox1.Controls.Add(this.txtCMND);
             this.groupBox1.Controls.Add(this.txtHoTen);
-            this.groupBox1.Controls.Add(this.txtMaKH);
             this.groupBox1.Controls.Add(this.btnXoa);
             this.groupBox1.Controls.Add(this.btnSua);
+            this.groupBox1.Controls.Add(this.btnLoad);
             this.groupBox1.Controls.Add(this.btnThem);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -108,16 +108,25 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // cbTinhTrangThanhToan
             // 
             this.cbTinhTrangThanhToan.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cbTinhTrangThanhToan.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTinhTrangThanhToan.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.cbTinhTrangThanhToan.FormattingEnabled = true;
-            this.cbTinhTrangThanhToan.Items.AddRange(new object[] {
-            "Chưa Thanh Toán"});
-            this.cbTinhTrangThanhToan.Location = new System.Drawing.Point(1017, 108);
-            this.cbTinhTrangThanhToan.Margin = new System.Windows.Forms.Padding(4);
+            this.cbTinhTrangThanhToan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.cbTinhTrangThanhToan.Font = new System.Drawing.Font("Times New Roman", 13.8F);
+            this.cbTinhTrangThanhToan.ForeColor = System.Drawing.Color.Black;
+            this.cbTinhTrangThanhToan.Location = new System.Drawing.Point(1018, 113);
+            this.cbTinhTrangThanhToan.Margin = new System.Windows.Forms.Padding(5);
+            this.cbTinhTrangThanhToan.Multiline = true;
             this.cbTinhTrangThanhToan.Name = "cbTinhTrangThanhToan";
-            this.cbTinhTrangThanhToan.Size = new System.Drawing.Size(265, 34);
-            this.cbTinhTrangThanhToan.TabIndex = 18;
+            this.cbTinhTrangThanhToan.Size = new System.Drawing.Size(265, 30);
+            this.cbTinhTrangThanhToan.TabIndex = 12;
+            this.cbTinhTrangThanhToan.Text = "Chưa Thanh Toán";
+            // 
+            // lbl_MaKh
+            // 
+            this.lbl_MaKh.AutoSize = true;
+            this.lbl_MaKh.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MaKh.Location = new System.Drawing.Point(122, 60);
+            this.lbl_MaKh.Name = "lbl_MaKh";
+            this.lbl_MaKh.Size = new System.Drawing.Size(0, 33);
+            this.lbl_MaKh.TabIndex = 19;
             // 
             // cbMaPhong
             // 
@@ -139,19 +148,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.label2.Size = new System.Drawing.Size(125, 22);
             this.label2.TabIndex = 15;
             this.label2.Text = "Tình Trạng TT";
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Location = new System.Drawing.Point(882, 201);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(5);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(156, 45);
-            this.btnLuu.TabIndex = 14;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // dateNgayDen
             // 
@@ -189,21 +185,11 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.txtHoTen.Size = new System.Drawing.Size(265, 34);
             this.txtHoTen.TabIndex = 10;
             // 
-            // txtMaKH
-            // 
-            this.txtMaKH.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtMaKH.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaKH.Location = new System.Drawing.Point(128, 64);
-            this.txtMaKH.Margin = new System.Windows.Forms.Padding(5);
-            this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(265, 34);
-            this.txtMaKH.TabIndex = 8;
-            // 
             // btnXoa
             // 
             this.btnXoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Location = new System.Drawing.Point(662, 201);
+            this.btnXoa.Location = new System.Drawing.Point(703, 206);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(5);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(156, 45);
@@ -216,7 +202,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // 
             this.btnSua.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Location = new System.Drawing.Point(444, 201);
+            this.btnSua.Location = new System.Drawing.Point(486, 206);
             this.btnSua.Margin = new System.Windows.Forms.Padding(5);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(156, 45);
@@ -225,11 +211,24 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
+            // btnLoad
+            // 
+            this.btnLoad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
+            this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoad.Location = new System.Drawing.Point(927, 206);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(156, 45);
+            this.btnLoad.TabIndex = 5;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
             // btnThem
             // 
             this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(66)))), ((int)(((byte)(73)))));
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Location = new System.Drawing.Point(241, 201);
+            this.btnThem.Location = new System.Drawing.Point(268, 206);
             this.btnThem.Margin = new System.Windows.Forms.Padding(5);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(156, 45);
@@ -423,15 +422,15 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCMND;
         private System.Windows.Forms.TextBox txtHoTen;
-        private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.DateTimePicker dateNgayDen;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbMaPhong;
-        private System.Windows.Forms.ComboBox cbTinhTrangThanhToan;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dgShowThongTin;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private System.Windows.Forms.Label lbl_MaKh;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.TextBox cbTinhTrangThanhToan;
     }
 }

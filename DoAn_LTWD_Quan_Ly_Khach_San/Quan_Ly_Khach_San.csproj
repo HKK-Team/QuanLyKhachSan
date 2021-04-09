@@ -64,6 +64,12 @@
     <Compile Include="Profile.Designer.cs">
       <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="RecoverPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecoverPassword.Designer.cs">
+      <DependentUpon>RecoverPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongKeDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </Compile>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecoverPassword.resx">
+      <DependentUpon>RecoverPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongKeDoanhThu.resx">
       <DependentUpon>ThongKeDoanhThu.cs</DependentUpon>

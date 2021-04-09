@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Windows.Forms;
 
 namespace DoAn_LTWD_Quan_Ly_Khach_San
 {
     public partial class loading : Form
     {
+        string MySQLConnectionString = @"server=localhost;user id=root;password = 260601;persistsecurityinfo=True;database=ql_khach_san";
+        MySqlConnection Connection;
         public loading()
         {
             InitializeComponent();
+            connectionData();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -27,7 +24,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             star += 1;
             circularProgressBar1.Value = star;
             circularProgressBar1.Text = Convert.ToString(star);
-            if(star == 101 )
+            if(star == 100 )
             {
                 star = 0;
                 timer1.Stop();
@@ -40,6 +37,16 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private void loading_Load(object sender, EventArgs e)
         {
             timer1.Start();
+        }
+
+        private void circularProgressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void connectionData()
+        {
+            Connection = new MySqlConnection(MySQLConnectionString);
+            Connection.Open();
         }
     }
 }

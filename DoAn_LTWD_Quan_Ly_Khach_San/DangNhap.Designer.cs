@@ -190,6 +190,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconPictureBox6.Size = new System.Drawing.Size(68, 67);
             this.iconPictureBox6.TabIndex = 17;
             this.iconPictureBox6.TabStop = false;
+            this.iconPictureBox6.Click += new System.EventHandler(this.iconPictureBox6_Click);
             // 
             // panel5
             // 
@@ -245,7 +246,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(238, 53);
             this.iconButton1.TabIndex = 14;
-            this.iconButton1.Text = "Clear";
+            this.iconButton1.Text = "Forgot you password ";
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 

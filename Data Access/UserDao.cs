@@ -1,9 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System.Data;
-using DataAccess;
-
-
-
+using System.Collections.Generic;
+using Data_Access;
 
 namespace DataAccess
 {
@@ -65,6 +63,45 @@ namespace DataAccess
             }
         }
 
-    
+        public string recoverPassword(string userRequesting)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new MySqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "select *from admin where LoginName=@user or Email=@mail";
+                    command.Parameters.AddWithValue("@user", userRequesting);
+                    command.Parameters.AddWithValue("@mail", userRequesting);
+                    command.CommandType = CommandType.Text;
+                    MySqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read() == true)
+                    {
+                        string userName = reader.GetString(3) + ", " + reader.GetString(4);
+                        string userMail = reader.GetString(6);
+                        string accountPassword = reader.GetString(1);
+                        var mailService = new SystemSupportMail();
+                        mailService.sendMail(
+                          subject: "HỆ THỐNG: Yêu cầu khôi phục mật khẩu",
+                          body: "Hi, " + userName + "\nBạn đã yêu cầu khôi phục mật khẩu của mình. \n" +
+                          "mật khẩu hiện tại của bạn là: " + accountPassword +
+                          "\nTuy nhiên, chúng tôi yêu cầu bạn thay đổi mật khẩu của mình ngay lập tức sau khi bạn vào hệ thống.",
+                          recipientMail: new List<string> { userMail }
+                          );
+
+                        return "Hi, " + userName + "\nBạn đã yêu cầu khôi phục mật khẩu của mình.\n" +
+                          "Vui lòng kiểm tra thư của bạn : " + userMail +
+                          "\nTuy nhiên, chúng tôi yêu cầu bạn thay đổi mật khẩu của mình ngay lập tức sau khi bạn vào hệ thống.";
+                    }
+                    else
+                        return "Xin lỗi, bạn không có tài khoản với Email hoặc tên người dùng đó";
+                }
+            }
+        }
+
     }
+
+
 }
+
