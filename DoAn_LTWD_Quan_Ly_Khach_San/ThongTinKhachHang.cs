@@ -30,7 +30,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         {
             // khỏi tạo giá trị có để kết nối dữ liệu với mysql
             Connection = new MySqlConnection(MySQLConnectionString);
-            Connection.Open();
             ShowData();
             ThanhToanLoad();
             showMaKh();
@@ -38,6 +37,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         public void ThanhToanLoad()
         {
             cbMaPhong.Items.Clear();
+            Connection.Open();
             MySqlcommand = Connection.CreateCommand();
             MySqlcommand.CommandType = CommandType.Text;
             MySqlcommand.CommandText = "select maphong from phong where TinhTrang = 'Còn Trống'";
@@ -49,17 +49,19 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             {
                 cbMaPhong.Items.Add(dr["maphong"].ToString());
             }
+            Connection.Close();
         }
 
         void ShowData()
-        { 
-           
+        {
+            Connection.Open();
             MySqlcommand = Connection.CreateCommand();
             MySqlcommand.CommandText = "select* from khachhang";
             adapter.SelectCommand = MySqlcommand;
             table.Clear();
             adapter.Fill(table);
             dgShowThongTin.DataSource = table;
+            Connection.Close();
         }
 
  
@@ -71,31 +73,35 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             MySqlcommand.CommandText = "insert into khachhang(`HOTEN`, `SOCMND`, `NGAYDEN`, `MAPHONG`, `TinhTrangTT`)  values('" + txtHoTen.Text + "', '" + txtCMND.Text + "','" + dateNgayDen.Text + "', '" + cbMaPhong.Text + "','" + cbTinhTrangThanhToan.Text + "') ";                                      
             // nếu câu lệnh truy vấn sai thì sẽ báo lỗi
             MySqlcommand.ExecuteNonQuery();
-            ShowData(); 
-            load();
             Connection.Close();
-            
-
-
+            load();
+            ShowData();
         }
         private void load()
         {
-            
-            MySqlcommand = Connection.CreateCommand();
-            MySqlcommand.CommandText = "update phong set tinhtrang = 'Đã Có Khách' where maphong = '" + cbMaPhong.Text + "'";
-            adapter.SelectCommand = MySqlcommand;
-            adapter.Fill(table);
-            ThanhToanLoad();
-            showMaKh();
-        }
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
             Connection.Open();
-            MessageBox.Show("Bạn có muốn lưu thông tin khách hàng vào cơ sở dữ liệu không?", "Thông Báo!", MessageBoxButtons.YesNo);
             MySqlcommand = Connection.CreateCommand();
             MySqlcommand.CommandText = "update phong set tinhtrang = 'Đã Có Khách' where maphong = '" + cbMaPhong.Text + "'";
-            adapter.SelectCommand = MySqlcommand;
-            adapter.Fill(table);
+            MySqlcommand.ExecuteNonQuery();
+            Connection.Close();
+        }
+        public void UpdatePhong()
+        {
+            string maphong;
+            Connection.Open();
+            string Mysql = "select maphong from khachhang where makh = '" + lbl_MaKh.Text + "'";
+            MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
+            Read_Data = mySqlCommand.ExecuteReader();
+            while (Read_Data.Read())
+            {
+
+                lbShow.Text = Read_Data[0].ToString();
+            }
+            Read_Data.Close();
+            maphong = lbShow.Text;
+            MySqlcommand = Connection.CreateCommand();
+            MySqlcommand.CommandText = "update phong set tinhtrang = 'Còn Trống' where maphong = '" + maphong + "'";
+            MySqlcommand.ExecuteNonQuery();
             Connection.Close();
         }
 
@@ -108,18 +114,24 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             MySqlcommand = Connection.CreateCommand();
             MySqlcommand.CommandText = "delete from khachhang where makh = '" + lbl_MaKh.Text + "'";
             MySqlcommand.ExecuteNonQuery();
-            ShowData();
+            MySqlcommand = Connection.CreateCommand();
+            MySqlcommand.CommandText = "update phong set tinhtrang = 'Còn Trống' where maphong = '" + cbMaPhong.Text + "'";
+            MySqlcommand.ExecuteNonQuery();
             Connection.Close();
+            ShowData();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            UpdatePhong();
             Connection.Open();
             MySqlcommand = Connection.CreateCommand();
             MySqlcommand.CommandText = "update khachhang set hoten = '" + txtHoTen.Text + "',socmnd = '" + txtCMND.Text + "', ngayden =  '" + dateNgayDen.Text + "', maphong = '" + cbMaPhong.Text + "',tinhtrangtt = '" +cbTinhTrangThanhToan.Text + "' where makh = '" + lbl_MaKh.Text + "'";
             MySqlcommand.ExecuteNonQuery();
-            ShowData();
             Connection.Close();
+            load();
+            ShowData();
+            lbShow.Text = "";
         }
         
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -159,7 +171,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         }
         private void showMaKh()
         {
-            
+            Connection.Open();   
             string Mysql = "SELECT max(makh)+1 FROM khachhang ;";
             MySqlCommand mySqlCommand = new MySqlCommand(Mysql, Connection);
             Read_Data = mySqlCommand.ExecuteReader();

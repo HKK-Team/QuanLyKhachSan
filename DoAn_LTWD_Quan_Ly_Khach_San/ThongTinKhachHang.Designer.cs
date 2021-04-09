@@ -56,6 +56,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.dgShowThongTin = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.lbShow = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgShowThongTin)).BeginInit();
@@ -77,6 +78,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.lbShow);
             this.groupBox1.Controls.Add(this.cbTinhTrangThanhToan);
             this.groupBox1.Controls.Add(this.lbl_MaKh);
             this.groupBox1.Controls.Add(this.cbMaPhong);
@@ -381,6 +383,14 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.iconPictureBox1.TabStop = false;
             this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
+            // lbShow
+            // 
+            this.lbShow.AutoSize = true;
+            this.lbShow.Location = new System.Drawing.Point(137, 204);
+            this.lbShow.Name = "lbShow";
+            this.lbShow.Size = new System.Drawing.Size(0, 22);
+            this.lbShow.TabIndex = 20;
+            // 
             // BookingRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -432,5 +442,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private System.Windows.Forms.Label lbl_MaKh;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.TextBox cbTinhTrangThanhToan;
+        private System.Windows.Forms.Label lbShow;
     }
 }

@@ -67,7 +67,6 @@ select count(MAGD) from thongkegiaodich;
 */
 #
 
-
 /* capnhat admin */
 alter table admin
 add column UserID int AUTO_INCREMENT primary key,
@@ -78,9 +77,12 @@ add column Email nvarchar(150)not null;
 ALTER TABLE admin CHANGE TaiKhoan LoginName nvarchar(100);
 ALTER TABLE admin CHANGE MatKhau Password nvarchar(100);
 
-# them tài khoản 
-INSERT INTO admin(TaiKhoan,matkhau,) VALUES('MinhKhanh','020901'); 
-INSERT INTO admin(TaiKhoan,matkhau) VALUES('KhanhVu','020901'); 
+alter table khachhang add constraint CK_NGAY check(datediff(curdate(),ngayden) >= 0);
+select ngayden, curdate() as ngayhientai from khachhang;
+# them tài khoản
+INSERT INTO admin(TaiKhoan,MatKhau) VALUES('MinhKhanh','020901'); 
+INSERT INTO admin(TaiKhoan,MatKhau) VALUES('KhanhVu','020901');
+INSERT INTO admin(TaiKhoan,MatKhau) VALUES('adminhuy','260601');
 UPDATE admin 
 SET 
 	Firstname = N'Vũ',
@@ -177,9 +179,7 @@ CHANGE COLUMN `sotiendathanhtoan` `sotiendathanhtoan` DECIMAL(12) NULL DEFAULT N
 
 
 
-
-
-
+select makh,maphong from khachhang where maphong = 'P03';
 
 
 
