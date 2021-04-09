@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quan_Ly_Khach_San", "DoAn_LTWD_Quan_Ly_Khach_San\Quan_Ly_Khach_San.csproj", "{995DFE05-2FEE-4A1E-99A3-9C3CA68DB5F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "Data Access\DataAccess.csproj", "{45B59C31-4362-48C6-A1CB-FBB58375C516}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "Data Access\DataAccess.csproj", "{45B59C31-4362-48C6-A1CB-FBB58375C516}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{4B1EE780-E0E7-4C42-9E02-5013E39856DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{4B1EE780-E0E7-4C42-9E02-5013E39856DE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{B97BA171-1462-4EA7-B375-664E19BA2118}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,8 @@ Global
 		{4B1EE780-E0E7-4C42-9E02-5013E39856DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B1EE780-E0E7-4C42-9E02-5013E39856DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B1EE780-E0E7-4C42-9E02-5013E39856DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B97BA171-1462-4EA7-B375-664E19BA2118}.Debug|Any CPU.ActiveCfg = Debug
+		{B97BA171-1462-4EA7-B375-664E19BA2118}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
