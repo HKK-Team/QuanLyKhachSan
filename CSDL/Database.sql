@@ -76,7 +76,7 @@ add column Position nvarchar (100) not null,
 add column Email nvarchar(150)not null;
 ALTER TABLE admin CHANGE TaiKhoan LoginName nvarchar(100);
 ALTER TABLE admin CHANGE MatKhau Password nvarchar(100);
-
+-- rằng buộc cho ngày nhân viên nhập vào phải nhỏ hơn ngày hiện tại
 alter table khachhang add constraint CK_NGAY check(datediff(curdate(),ngayden) >= 0);
 select ngayden, curdate() as ngayhientai from khachhang;
 # them tài khoản
@@ -90,7 +90,7 @@ SET
     Position ='Staff',
     email = '0982483015kk@gmail.com'
 WHERE
-    UserId = 3;
+    UserId = 2;
     
 UPDATE admin 
 SET 
@@ -108,7 +108,7 @@ SET
     Position ='Staff',
     email = 'huynhduchuy2001@gmail.com'
 WHERE
-    UserId = 1;
+    UserId = 3;
     
 /* chuan hoa tien */
 DELIMITER $$

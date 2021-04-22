@@ -45,7 +45,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnQuayLai = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.txtTinhTrang = new System.Windows.Forms.TextBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.txtSoGiuong = new System.Windows.Forms.TextBox();
@@ -112,7 +111,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.btnQuayLai);
             this.groupBox1.Controls.Add(this.btn_xoa);
-            this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.txtTinhTrang);
             this.groupBox1.Controls.Add(this.txtDonGia);
             this.groupBox1.Controls.Add(this.txtSoGiuong);
@@ -171,7 +169,7 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btnQuayLai.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnQuayLai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnQuayLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuayLai.Location = new System.Drawing.Point(272, 396);
+            this.btnQuayLai.Location = new System.Drawing.Point(173, 327);
             this.btnQuayLai.Name = "btnQuayLai";
             this.btnQuayLai.Size = new System.Drawing.Size(138, 45);
             this.btnQuayLai.TabIndex = 9;
@@ -192,20 +190,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
             this.btn_xoa.Text = "Xóa phòng";
             this.btn_xoa.UseVisualStyleBackColor = true;
             this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Location = new System.Drawing.Point(173, 327);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(138, 45);
-            this.btnAdd.TabIndex = 6;
-            this.btnAdd.Text = "Thêm phòng";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtTinhTrang
             // 
@@ -403,7 +387,6 @@ namespace DoAn_LTWD_Quan_Ly_Khach_San
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtMaPhong;
         private System.Windows.Forms.Button btnQuayLai;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dgShowPhongh;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
